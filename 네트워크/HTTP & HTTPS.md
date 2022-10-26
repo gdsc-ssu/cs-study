@@ -26,7 +26,7 @@ HTTP : 애플리케이션 레벨의 프로토콜, **TCP/IP 위에서 작동** <b
 1. `Start Line` : 요청의 첫번째 줄
     - HTTP Method : 해당 요청이 의도한 액션의 정의부 (`GET`, `POST`, `DELETE`)
     - Request target : 해당 요청이 전송되는 목표 url
-    - HTTP Version : 사용되는 HTTP 버전 정보, ex) `GET/login HTTP/1.1`
+    - HTTP Version : 사용되는 HTTP 버전 정보, ex) `HTTP/1.1`
 
 2. `Headers` : 요청에 대한 추가 정보(meta data)
     - `Key:value` 형태로 이루어짐
