@@ -50,9 +50,34 @@
 - 타 자료구조(ex. 추상자료형, ADT ...)의 기반
     - ex) queue, stack, hash table ...
 
-## ✅ 연결 리스트의 노드
-- 리스트의 첫 노드 : `Head`노드
-- 리스트의 끝 노드 : `Tail`노드, `End`노드
+## ✅ 연결 리스트 종류
+### 단순 연결 리스트 (Singly Linked List)
+<img src="https://user-images.githubusercontent.com/66112716/198505061-308579db-1449-421a-82c5-6fc45881de31.jpeg" width="70%" />
+
+- 노드를 한 줄로 연결시킨 자료구조
+- 각 노드마다 `값(데이터) : 링크(포인터)`를 가짐
+- 단방향 연결 : 각 원소 별 단방향 단일 링크(포인터) 필드가 필요함
+- `데이터 | 링크` → `다음 노드` → `다음 노드` → ...
+- 마지막 노드의 링크 : `null`값을 가짐
+
+### 이중 연결 리스트 (Doubly Linked List)
+<img src="https://user-images.githubusercontent.com/66112716/198505109-b578b0c9-549d-4f23-bdfe-207f7fd36014.jpeg" width="70%" />
+
+- **양방향** 연결 : 후행 노드와 선행 노드 모두를 가리킴
+- 각 노드별로 **2개의 링크**를 가짐
+- `{ node : (prev link, data, next link) }`
+- 순방향 & 양방향 탐색 가능
+
+### 원형 연결 리스트 (Circular Linked List)
+<img src="https://user-images.githubusercontent.com/66112716/198505080-e7c25d0d-1d4b-47aa-8669-8476910ce1ac.jpeg" width="70%" />
+
+- 마지막 노드의 링크가 **리스트의 첫번째 노드**를 가리킴
+- 단순 연결 리스트의 마지막 노드 줄을 첫 노드와 연결한 형태
+
+### 청크 리스트 (Chunked List)
+- 배열과 리스트의 장점을 합친 형태
+- 리스트의 멤버를 **레코드의 배열**로 지정
+    - CPU의 cache 기능이 있는 경우 지역성(locality)이 떨어지는 연결리스트의 성능 문제를 보완
 
 ## ✅ 연결 리스트 구현
 ### 1. Node 클래스 선언 및 초기화
@@ -67,6 +92,10 @@ class Node:
 ### 2. LinkedList 클래스 선언 및 초기화
 - `LinkedList` 클래스에서는 링크드리스트의 노드 개수를 가리키는 `no`, 첫 노드인 `head`, 현재 노드인 `current` 멤버변수를 가짐
 - `__len__` 메소드를 통해 링크드리스트의 노드 개수, 즉 길이를 반환하는 기능 구현
+
+- **연결리스트 용어**
+    - 리스트의 첫 노드 : `Head`노드
+    - 리스트의 끝 노드 : `Tail`노드, `End`노드
 ```py
 class LinkedList:
     def __init__(self):
@@ -173,37 +202,7 @@ def remove(self, p):
             self.no -= 1
 ```
 
-## ✅ 연결 리스트 종류
-### 단순 연결 리스트 (Singly Linked List)
-<img src="https://user-images.githubusercontent.com/66112716/198505061-308579db-1449-421a-82c5-6fc45881de31.jpeg" width="70%" />
-
-- 노드를 한 줄로 연결시킨 자료구조
-- 각 노드마다 `값(데이터) : 링크(포인터)`를 가짐
-- 단방향 연결 : 각 원소 별 단방향 단일 링크(포인터) 필드가 필요함
-- `데이터 | 링크` → `다음 노드` → `다음 노드` → ...
-- 마지막 노드의 링크 : `null`값을 가짐
-
-### 이중 연결 리스트 (Doubly Linked List)
-<img src="https://user-images.githubusercontent.com/66112716/198505109-b578b0c9-549d-4f23-bdfe-207f7fd36014.jpeg" width="70%" />
-
-- **양방향** 연결 : 후행 노드와 선행 노드 모두를 가리킴
-- 각 노드별로 **2개의 링크(포인터)**를 가짐
-- `{ node : (prev link, data, next link) }`
-- 순방향 & 양방향 탐색 가능
-
-### 원형 연결 리스트 (Circular Linked List)
-<img src="https://user-images.githubusercontent.com/66112716/198505080-e7c25d0d-1d4b-47aa-8669-8476910ce1ac.jpeg" width="70%" />
-
-- 마지막 노드의 링크가 **리스트의 첫번째 노드**를 가리킴
-- 단순 연결 리스트의 마지막 노드 줄을 첫 노드와 연결한 형태
-
-### 청크 리스트 (Chunked List)
-- 배열과 리스트의 장점을 합친 형태
-- 리스트의 멤버를 **레코드의 배열**로 지정
-    - CPU의 cache 기능이 있는 경우 지역성(locality)이 떨어지는 연결리스트의 성능 문제를 보완
-
-> 소스코드 참고 : [Do it! 자료구조와 함께 배우는 알고리즘 입문](https://search.shopping.naver.com/book/catalog/32485046073) 
-
-> [사진 | 자료 출처 1](https://code-lab1.tistory.com/2)
-
-> [자료 출처 2](http://www.ktword.co.kr/test/view/view.php?m_temp1=3559)
+## 📌 참고 자료 
+- 소스코드 참고 : [Do it! 자료구조와 함께 배우는 알고리즘 입문](https://search.shopping.naver.com/book/catalog/32485046073) 
+- [사진 | 자료 출처 1](https://code-lab1.tistory.com/2)
+- [자료 출처 2](http://www.ktword.co.kr/test/view/view.php?m_temp1=3559)
