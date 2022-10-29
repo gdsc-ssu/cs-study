@@ -2,7 +2,7 @@
 
 > **트리구조(Tree)** 의 여러 유형 중 가장 기본이 되는 유형입니다.
 
-_해당 문서는 [트리구조(Tree)](https://github.com/Jun99uu/TIL/blob/master/CS/data-structure/Tree.md)와 이어집니다._
+_해당 문서는 [트리구조(Tree)](https://github.com/gdsc-ssu/cs-study/blob/data-structure/tree/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Tree.md)와 이어집니다._
 
 ## 🌴 이진트리(Binary Tree)란 무엇일까?
 
