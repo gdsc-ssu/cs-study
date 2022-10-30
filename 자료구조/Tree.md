@@ -5,7 +5,7 @@
 ## 🌳 트리구조(Tree)란 무엇일까?
 
 - **그래프(Graph)** 의 일종이다.
-- 한 노드에서 시작해서 다른 정점들을 순회하여 자기 자신에게 돌아오는, 순환이 없는 **무방향 연결 그래프** 이다.
+- 한 노드에서 시작해서 다른 정점들을 순회하여 자기 자신에게 돌아오는 `순환`이 없는, **무방향 연결 그래프** 이다.
 - 트리구조 내에 또 다른 하위 트리구조가 존재할 수 있는, **재귀적 자료구조** 이기도 하다.
 - 대표적으로, 컴퓨터의 <span style="color:red">`directory`</span>구조나 <span style="color:red">`기업 및 정부 조직도`</span>가 트리구조이다.
 - **가지를 늘려가며 뻗어나간다.**
@@ -43,15 +43,18 @@
 
 ### 👍 트리구조 맞습니다.
 
-- ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvKvqg%2Fbtq1E9ODRk8%2FqXL8GehaRh0tgxiyrm8Q31%2Fimg.png)<br/>
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FvKvqg%2Fbtq1E9ODRk8%2FqXL8GehaRh0tgxiyrm8Q31%2Fimg.png)<br/>
 
 ### 👎 트리구조 아닙니다.
 
-- ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsXGwq%2Fbtq1ByPsA98%2FiAmWtKVq4WWdEV85sorkkk%2Fimg.png)<br/>
-  - _루트노드가 두개이기 때문이다._<br/>
-- ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pwtu%2Fbtq1By9I93O%2Fzz7ZRsYNpUbKfCwCf0Jno0%2Fimg.png)<br/>
-  - _6번 노드의 부모노드가 두개이기 때문이다._
-  - _cycle을 이루기 때문이다._
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsXGwq%2Fbtq1ByPsA98%2FiAmWtKVq4WWdEV85sorkkk%2Fimg.png)<br/>
+
+- _루트노드가 두개이기 때문이다._
+
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2F4pwtu%2Fbtq1By9I93O%2Fzz7ZRsYNpUbKfCwCf0Jno0%2Fimg.png)<br/>
+
+- _6번 노드의 부모노드가 두개이기 때문이다._
+- _cycle을 이루기 때문이다._
 
 ## 🌳 트리구조(Tree)의 종류
 
@@ -91,7 +94,9 @@
 
 - **깊이 우선 순회**라고도 불린다.
 - 루트노드 --> 왼쪽 서브트리 --> 오른쪽 서브트리 순서로 순회하는 방식이다.
-  - ![image](https://upload.wikimedia.org/wikipedia/commons/a/ac/Preorder-traversal.gif)<br/>
+
+  ![image](https://upload.wikimedia.org/wikipedia/commons/a/ac/Preorder-traversal.gif)<br/>
+
   ```python
   def preorder(self):
           def _preorder(node):
@@ -107,7 +112,9 @@
 
 - **대칭 순회**라고도 불린다.
 - 왼쪽 서브트리 --> 루트노드 --> 오른쪽 서브트리 순서로 순회하는 방식이다.
-  - ![image](https://upload.wikimedia.org/wikipedia/commons/4/48/Inorder-traversal.gif)<br/>
+
+  ![image](https://upload.wikimedia.org/wikipedia/commons/4/48/Inorder-traversal.gif)<br/>
+
   ```python
   def inorder(self):
   def _inorder(node):
@@ -122,7 +129,9 @@
 ### 3️⃣ 후위 순회 (Postorder)
 
 - 왼쪽 서브트리 --> 오른쪽 서브트리 --> 루트노드 순서로 순회하는 방식이다.
-  - ![images](https://upload.wikimedia.org/wikipedia/commons/2/28/Postorder-traversal.gif)<br/>
+
+  ![images](https://upload.wikimedia.org/wikipedia/commons/2/28/Postorder-traversal.gif)<br/>
+
   ```python
   def postorder(self):
   def _postorder(node):
@@ -140,7 +149,7 @@
 - 각 노드를 레벨 순서대로 검사하는 순회 방법이다.
 - `스택`을 사용하던 위의 세가지 순회 방법과 다르게, `선입선출 기반의 큐`를 기반으로 한다.
 
-  - ![image](https://res.cloudinary.com/practicaldev/image/fetch/s--Lng93Nkl--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/eijg2o9eo8xtqk40q91d.png)
+  ![image](https://res.cloudinary.com/practicaldev/image/fetch/s--Lng93Nkl--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/i/eijg2o9eo8xtqk40q91d.png)
 
   ```python
   from collections import deque
@@ -156,6 +165,14 @@
               q.append(node.right)
   ```
 
-> 내용 참고 : [윤성우의 열혈 자료구조](http://www.orentec.co.kr/teachlist/DA_ST_1/teach_sub1.php), [[자료구조] 트리 (Tree)](https://velog.io/@kimdukbae/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%8A%B8%EB%A6%AC-Tree), [[자료구조] 트리 (Tree)](https://yoongrammer.tistory.com/68)
+## 🔍참고자료
 
-> 소스코드 참고 : [[Python] 트리 구현 / 순회(전위 순회, 중위 순회, 후위 순회, 레벨 순회)](https://koosco.tistory.com/109)
+### 내용 참고
+
+- [윤성우의 열혈 자료구조](http://www.orentec.co.kr/teachlist/DA_ST_1/teach_sub1.php)
+- [[자료구조] 트리 (Tree)](https://velog.io/@kimdukbae/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%8A%B8%EB%A6%AC-Tree)
+- [[자료구조] 트리 (Tree)](https://yoongrammer.tistory.com/68)
+
+### 소스코드 참고
+
+- [[Python] 트리 구현 / 순회(전위 순회, 중위 순회, 후위 순회, 레벨 순회)](https://koosco.tistory.com/109)

@@ -98,6 +98,16 @@ _해당 문서는 [트리구조(Tree)](https://github.com/gdsc-ssu/cs-study/blob
     donkey elephant five
 ```
 
-> 내용 및 이미지 참고 : [[자료구조] 이진 트리 (Binary tree) 알아보기](https://yoongrammer.tistory.com/69), [[자료구조] 이진 트리 (Binary Tree)](https://skytitan.tistory.com/97), [5-2. [자료구조] 이진트리(binary tree)](https://kingpodo.tistory.com/27), [[자료구조] 트리(Tree)의 개념 | 이진 트리, 전 이진 트리, 완전 이진트리, 포화 이진 트리, 이진 탐색트리](https://code-lab1.tistory.com/8)
+## 🔍참고자료
 
-> 소스코드 참고 : [이진트리 및 완전이진트리 구현과 순회](https://seongonion.tistory.com/41), [[자료구조] 이진 트리(Binary Tree)](https://velog.io/@cha-suyeon/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%ACBinary-Tree)
+### 내용 및 이미지 참고
+
+- [[자료구조] 이진 트리 (Binary tree) 알아보기](https://yoongrammer.tistory.com/69)
+- [[자료구조] 이진 트리 (Binary Tree)](https://skytitan.tistory.com/97)
+- [5-2. [자료구조] 이진트리(binary tree)](https://kingpodo.tistory.com/27)
+- [[자료구조] 트리(Tree)의 개념 | 이진 트리, 전 이진 트리, 완전 이진트리, 포화 이진 트리, 이진 탐색트리](https://code-lab1.tistory.com/8)
+
+### 소스코드 참고
+
+- [이진트리 및 완전이진트리 구현과 순회](https://seongonion.tistory.com/41)
+- [[자료구조] 이진 트리(Binary Tree)](https://velog.io/@cha-suyeon/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%ACBinary-Tree)
