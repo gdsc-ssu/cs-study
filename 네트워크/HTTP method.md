@@ -2,7 +2,7 @@
 
 ## HTTP 메서드의 종류
 
-> [GET](#get) [POST](#post) [PUT](#put) [DELETE](#delete) [PATCH](#patch) HEAD OPTIONS CONNECT TRACE
+> GET POST PUT DELETE PATCH HEAD OPTIONS CONNECT TRACE
 
 ### GET
 
