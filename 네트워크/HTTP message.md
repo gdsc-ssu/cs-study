@@ -14,7 +14,7 @@
 
 > request-line = <span style="color:#ff7f00">method</span> SP(공백) <span style="color:#ff2288">request-target</span> SP <span style="color:#00FF11">HTTP-version</span> CRLF(엔터)
 
-- <span style="color:#ff7f00">HTTP 메서드</span>
+- <span style="color:red">HTTP 메서드</span>
   - GET : 리소스 조회 (데이터 달라고 요청)
   - POST : 요청 내역 처리 (데이터 받아오기)
   - PUT :
