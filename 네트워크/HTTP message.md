@@ -8,7 +8,7 @@
 
 ---
 
-<span style="font-size:20px;font-weight:bolder">시작라인 (start-line)</span>
+### 시작라인 (start-line)
 
 **요청메세지**
 
@@ -39,7 +39,7 @@
 
 ---
 
-<span style="font-size:20px;font-weight:bolder">헤더 (Header)</span>
+### 헤더 (Header)
 
 > harder-field = field-name “:” OWS field-value OWS (OWS:띄어쓰기 허용, 띄어도 되고 안 띄어도 되고)
 
@@ -49,7 +49,7 @@
 
 ---
 
-<span style="font-size:20px;font-weight:bolder">messege body (본문)</span>
+### messege body (본문)
 
 - 실제 전송할 데이터
 - HTML 문서, 이미지, 영상, JSON 등등 byte로 표현할 수 있는 모든 데이터 전송 가능
@@ -57,4 +57,5 @@
 ### 출처
 
 https://www.inflearn.com/course/http-웹-네트워크
+
 https://developer.mozilla.org/ko/docs/Web/HTTP/Status
