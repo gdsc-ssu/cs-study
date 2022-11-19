@@ -6,9 +6,9 @@
   - `이진탐색(Binary Search`의 효율적인 탐색 능력
   - `연결리스트(Linked List)`의 데이터 삽입/삭제 용이성
     - 일반 배열과 다르게 연결리스트는 **비연속적인 공간 할당**을 통해 메모리를 저장하기에 삽입/삭제 비용이 적다.
-    - [GDSC SSU CS-Study 연결 리스트](https://github.com/gdsc-ssu/cs-study/blob/data-structure/linked-list/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Linked%20List.md) 참고
+    - [GDSC SSU CS-Study 연결 리스트](https://github.com/gdsc-ssu/cs-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Linked%20List.md) 참고
 - 때문에, 기존의 `이진트리(Binary Tree)`보다 탐색 속도가 빠르다.
-  - [GDSC SSU CS-Study 이진트리](https://github.com/gdsc-ssu/cs-study/blob/data-structure/tree/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/BinaryTree.md) 참고
+  - [GDSC SSU CS-Study 이진트리](https://github.com/gdsc-ssu/cs-study/blob/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/BinaryTree.md) 참고
   - 트리의 높이가 **h**일 때, **`O(h)`** 의 시간 복잡도를 갖는다.
 
 ## 🌵 이진탐색트리(Binary Search Tree)의 연산
