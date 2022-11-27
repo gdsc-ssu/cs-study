@@ -107,14 +107,14 @@ void dijkstra(int n, const number W[][], set_of_edges& F)
 		length[i] = W[1][i]; 
 	}
 
-	repeat (n-1번){
+	repeat (n-1){
 		min = INF;
 		for(i=2;i<=n;i++){
 			if(0<=length[i]<min){
 				min = length[i];
 				vnear = i;
 			}
-		e = touch[vnear]가 인덱스인 마디에서 vnear가 인덱스인 마디로 가는 이음선;
+		// e = touch[vnear]가 인덱스인 마디에서 vnear가 인덱스인 마디로 가는 이음선;
 		e를 F에 추가;
 		for(i=2;i<=n;i++){
 				if(length[vnear] + W[vnear][i] < length[i]){
@@ -130,6 +130,6 @@ void dijkstra(int n, const number W[][], set_of_edges& F)
 
 ---
 
-### 참고 자료
+## 참고 자료
 
 [https://m.blog.naver.com/ndb796/221234424646](https://m.blog.naver.com/ndb796/221234424646)
