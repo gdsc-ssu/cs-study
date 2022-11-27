@@ -5,7 +5,7 @@
 - 관계형 데이터베이스 시스템(RDBMS)에서 자료의 관리 및 처리 목적으로 설계된 언어
 
 ## ✅ 데이터베이스 언어 종류
-- [데이터베이스 언어 및 개념 자세히 살펴보기](https://github.com/gdsc-ssu/cs-study/pull/10)
+- [데이터베이스 언어 및 개념 자세히 살펴보기](https://github.com/gdsc-ssu/cs-study/blob/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4/DB%20%EA%B0%9C%EB%85%90%20%EC%A0%95%EB%A6%AC.md)
 - ▶️ **DDL(Data Definition Language) : 데이터 정의어**
    - 각 릴레이션의 정의를 위해 사용되는 언어 (`CREATE`, `ALTER`, `DROP`, `RENAME`, `TRUNCATE` ...)
 
