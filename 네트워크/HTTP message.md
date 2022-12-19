@@ -12,12 +12,14 @@
 
 **요청메세지**
 
-> request-line = <span style="color:#ff7f00">method</span> SP(공백) <span style="color:#ff2288">request-target</span> SP <span style="color:#00FF11">HTTP-version</span> CRLF(엔터)
+```bash
+request-line = <span style="color:#ff7f00">method</span> SP(공백) <span style="color:#ff2288">request-target</span> SP <span style="color:#00FF11">HTTP-version</span> CRLF(엔터)
+```
 
 - <span style="color:red">HTTP 메서드</span>
   - GET : 리소스 조회 (데이터 달라고 요청)
   - POST : 요청 내역 처리 (데이터 받아오기)
-  - PUT :
+  - PUT : 리소스 생성 혹은 대체 (url이 존재하면 데이터 교체, 존재하지 않으면 생성)
   - DELETE : 삭제 요청 (지워주세요)
 - <span style="color:#ff2288">요청 대상</span> (/search?q=hello%hl=ko)
   - absolute-path[?query] (절대경로[?쿼리])
@@ -28,7 +30,9 @@
 
 **응답메세지**
 
-> status-line = <span style="color:#ff7f00">method</span> HTTP-version</span> SP <span style="color:#ff2288">status-code</span> SP <span style="color:#00FF11">reason-phrase</span> CRLF
+```bash
+status-line = <span style="color:#ff7f00">method</span> HTTP-version</span> SP <span style="color:#ff2288">status-code</span> SP <span style="color:#00FF11">reason-phrase</span> CRLF
+```
 
 - <span style="color:#ff7f00">HTTP 버전</span>
 - <span style="color:#ff2288">HTTP 상태 코드</span> : 요청 성공, 실패를 나타냄
@@ -41,9 +45,11 @@
 
 ### 헤더 (Header)
 
-> harder-field = field-name “:” OWS field-value OWS (OWS:띄어쓰기 허용, 띄어도 되고 안 띄어도 되고)
+```bash
+harder-field = field-name “:” OWS field-value OWS (OWS:띄어쓰기 허용, 띄어도 되고 안 띄어도 되고)
+```
 
-- **http 전송에 필요한 모든 부가 정보**
+- **http 전송에 필요한 모든 부가 정보**<br />
   ex) 메세지 바디의 내용, 메세지 바디의 크기, 압축, 인증, 요청 클라이언트 정보 등등 모든 필요한 metadata가 있음.
 - 사용자 정의 헤더 추가 가능
 
