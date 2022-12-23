@@ -1,12 +1,12 @@
-## IPC
+# IPC
 
-### IPC(InterProcess Communication) 란?
+## IPC(InterProcess Communication) 란?
 
 IPC 란 Process 들 간에 데이터 및 정보를 주고 받기 위한 메커니즘으로, Kernel 에서 IPC 를 위한 도구를 System Call 의 형태로 제공한다. 
 
 Process는 기본적으로 독립되어 존재하기 때문에 서로 간의 통신이 어렵다는 문제가 있다. 이러한 Process 간 협력 모델(Cooperating Process Model)을 구현하기 위해서는 IPC가 필요하다. 
 
-### IPC 모델 
+## IPC 모델 
 
 IPC 에는 Shared Memory 와 Message Passing 로 2가지 모델이 존재한다. 
 
@@ -26,7 +26,7 @@ IPC 에는 Shared Memory 와 Message Passing 로 2가지 모델이 존재한다.
 - Send 와 Receive 를 수행할때 Kernel이 동기화를 제공하기 때문에, 프로그램에서 동기화에 대한 고려 없이 사용이 가능하다. 그러나 실행중이지 않은 프로세스가 메세지를 수신하는 상황 등 Context Switching 와 관련하여 고려할 부분이 존재한다. 
 - 구현 IPC : Pipe, Message Queue, Socket 
 
-### IPC 종류 
+## IPC 종류 
 
 #### Pipe
 
@@ -86,6 +86,6 @@ Message Queue는 고정된 크기를 갖는 메세지의 연결 리스트(Linked
 - 다른 IPC 방법과 달리 Machine Boundary 에 구애 받지 않는다. 즉 Port 번호와 PC의 IP 주소를 조합하여 원격 통신이 가능해졌다. 
 - 연결 방식에 따라 TCP(Reliable) / UDP(Unreliable) 통신으로 나눌 수 있다. 
 
-#### 참고
+## 참고
 
 https://bluemoon-1st.tistory.com/22
