@@ -1,6 +1,6 @@
 # CPU Scheduling
 
-: 다음에 실행할 프로세스를 정하는 **스케줄링 정책(scheduling policy)**
+: 다음에 실행할 프로세스를 정하는 **스케줄링 정책(scheduling policy)**이다.
 
 <br>
 
@@ -11,12 +11,12 @@
 기본적으로 스케줄링은 아래 두 가지로 분류된다.
 
 - **Non-preemptive scheduling (비선점 스케줄링)**
-  - 프로세스가 실행되면 해당 프로세스가 종료되거나 양보할 때까지 계속 실행
-  - 협력적으로 동작해야함 (안그러면 하나가 독점함!)
+  - 프로세스가 실행되면 해당 프로세스가 종료되거나 양보할 때까지 계속 실행된다.
+  - 협력적으로 동작해야한다. (안그러면 하나가 독점한다!)
 
 - **Preemptive scheduling (선점형 스케줄링)**
-  - 프로세스 실행 도중에도 **OS가 interrupt로 개입** 가능
-  - 대부분 이 방식 사용
+  - 프로세스 실행 도중에도 **OS가 interrupt로 개입** 가능하다.
+  - 대부분 이 방식을 사용한다.
 
 <br>
 
@@ -51,14 +51,14 @@
 
 ## 방법1. FIFO Scheduling (First In First Out, FCFS)
 
-: job이 도착한 순서대로 스케줄링
+: job이 도착한 순서대로 스케줄링한다.
 
 <br>
 
 ### 장점
 
-- 구현이 쉬움
-- 위에서 정의한 가정 내에서는 매우 잘 동작함 (하지만 현실에서는 위 가정들이 보장되지 않는다)
+- 구현이 쉽다.
+- 위에서 정의한 가정 내에서는 매우 잘 동작한다. (하지만 현실에서는 위 가정들이 보장되지 않는다)
 
 - **no starvation**
 
@@ -127,20 +127,20 @@
 
 ## 방법2. SJF Scheduling (Shortest Job First)
 
-: 실행시간이 가장 짧은 job부터 실행
+: 실행시간이 가장 짧은 job부터 실행시킨다.
 
 <br>
 
 ### 장점
 
-- 실행시간이 달라도 turnaround time 측면에서 나쁘지 않음
+- 실행시간이 달라도 turnaround time 측면에서 나쁘지 않다
 
 
 
 ### 단점
 
 - **Non-preemptive**
-- **도착시간이 달라지면 FIFO와 비슷한 성능**을 가짐
+- **도착시간이 달라지면 FIFO와 비슷한 성능**을 가진다.
 
 <br>
 
@@ -200,7 +200,7 @@ FIFO 예제2와 동일한 조건이 주어진다고 했을 때, 실행시간이 
 
 ## 방법3. STCF Scheduling (Shortest Time-to-Completion First)
 
-: 남은 실행시간이 가장 짧은 job부터 실행
+: 남은 실행시간이 가장 짧은 job부터 실행시킨다.
 
 - **SJF 스케줄러 방식에 선점형 방식을 추가**한 것이다. (가정3 완화)
 
@@ -247,11 +247,11 @@ FIFO 예제2와 동일한 조건이 주어진다고 했을 때, 실행시간이 
 
 ## 방법4. RR Scheduling (Round Robin)
 
-: 시간을 잘게 쪼개어 순서대로 번갈아가면서 실행
+: 시간을 잘게 쪼개어 순서대로 번갈아가면서 실행시킨다.
 
 - FIFO, SJF, STCF 스케줄링 방식들은 모두 **response time** 측면에서 별로이다.
   (응답 시간(response time) = 처음 스케줄된 시점 - 도착 시점)
-- circular FIFO queue 라고도 불림
+- circular FIFO queue 라고도 불린다.
 
 <br>
 
@@ -259,7 +259,7 @@ FIFO 예제2와 동일한 조건이 주어진다고 했을 때, 실행시간이 
 
 - **shorter**
   - better response time
-  - context switching이 너무 자주 일어나 오버헤드가 심해져 전체 시스템 성능이 저하됨
+  - context switching이 너무 자주 일어나 오버헤드가 심해져 전체 시스템 성능이 저하된다.
 - **longer**
   - worse response time
 
@@ -316,16 +316,16 @@ SJF/STCF vs RR
 
 - job이 I/O request 시작 시
   - 해당 job block
-  - 다른 job 스케줄됨
+  - 다른 job 스케줄된다.
 - job이 I/O 끝났을 시
-  - interrupt 올림
-  - 이후에 policy에 의해서 어떤 job을 실행할지 결정
+  - interrupt 올린다.
+  - 이후에 policy에 의해서 어떤 job을 실행할지 결정한다.
 
 <br>
 
 ### 예제
 
-중첩이 있을 때와 없을 때를 비교
+중첩이 있을 때와 없을 때를 비교해보자
 
 - 조건
 
@@ -342,7 +342,7 @@ SJF/STCF vs RR
 
     <img width="447" alt="image" src="https://user-images.githubusercontent.com/70627979/161377231-ab173f63-2f26-417a-a77c-d6382c2abe33.png">
 
-    → turnaround time, response time 둘 다 별로
+    → turnaround time, response time 둘 다 별로이다.
 
 
   - **중첩이 있는 경우**
@@ -368,11 +368,11 @@ SJF/STCF vs RR
 
 - Rule 2) Priority(A) == Priority(B) 이면, A와 B는 RR 방식으로 실행된다.
 
-- Rule 3) job이 시스템에 들어오면, 가장 높은 우선순위를 배정받음
+- Rule 3) job이 시스템에 들어오면, 가장 높은 우선순위를 배정받는다.
 
-- Rule 4) 특정 priority level에서 정해진 시간만큼 돌았으면, job의 priority를 1단계 낮춤
+- Rule 4) 특정 priority level에서 정해진 시간만큼 돌았으면, job의 priority를 1단계 낮춘다.
 
-- Rule 5) 일정 기간(S) 지나면, 시스템의 모든 job들을 가장 높은 우선순위의 큐로 이동시킴
+- Rule 5) 일정 기간(S) 지나면, 시스템의 모든 job들을 가장 높은 우선순위의 큐로 이동시킨다.
 
 
 <br>
@@ -412,15 +412,15 @@ SJF/STCF vs RR
 
 - Interactive jobs
 
-  - 런타임이 대체로 짧고, response time이 짧길 원함
-  - CPU를 사용하는 시간이 짧고, 대부분의 시간을 I/O를 기다리는데 사용
+  - 런타임이 대체로 짧고, response time이 짧길 원한다.
+  - CPU를 사용하는 시간이 짧고, 대부분의 시간을 I/O를 기다리는데 사용된다.
 
   **→ high priority**
 
 - CPU-intensive jobs
 
-  - CPU를 오랫동안 사용
-  - response time을 크게 신경쓰지 않음
+  - CPU를 오랫동안 사용한다.
+  - response time을 크게 신경쓰지 않는다.
 
   **→ low priority**
 
@@ -434,11 +434,11 @@ SJF/STCF vs RR
 
 MLFQ 우선순위 결정 알고리즘)
 
-> #### Rule 3: job이 시스템에 들어오면, 가장 높은 우선순위를 배정받음
+> #### Rule 3: job이 시스템에 들어오면, 가장 높은 우선순위를 배정받는다.
 >
-> #### Rule 4a: 만약 job이 현재 priority에서 실행됐는데 할당된 time-slice를 전부 사용했다면, job의 priority를 1단계 낮춤
+> #### Rule 4a: 만약 job이 현재 priority에서 실행됐는데 할당된 time-slice를 전부 사용했다면, job의 priority를 1단계 낮춘다.
 >
-> #### Rule 4b: 만약 job이 현재 priority에서 실행됐는데 할당된 time-slice를 전부 사용하기 전에 CPU를 양보하면, 그 job은 동일한 priority를 유지함
+> #### Rule 4b: 만약 job이 현재 priority에서 실행됐는데 할당된 time-slice를 전부 사용하기 전에 CPU를 양보하면, 그 job은 동일한 priority를 유지한다.
 
 
 
@@ -481,7 +481,7 @@ MLFQ 우선순위 결정 알고리즘)
 
 starvation 문제를 해결하기 위해 룰을 추가하였다.
 
-> #### Rule 5: 일정 기간(S) 지나면, 시스템의 모든 job들을 가장 높은 우선순위의 큐로 이동시킴
+> #### Rule 5: 일정 기간(S) 지나면, 시스템의 모든 job들을 가장 높은 우선순위의 큐로 이동시킨다.
 
 <img width="857" alt="image" src="https://user-images.githubusercontent.com/70627979/161437677-f7c2b18f-e282-4040-8b7f-ad64cdbdba05.png" style="zoom: 67%;" >
 
@@ -491,7 +491,7 @@ starvation 문제를 해결하기 위해 룰을 추가하였다.
 
 스케줄러 악용 문제를 해결하고자 4번째 룰을 개선하였다.
 
-> #### Rule 4: 특정 priority level에서 정해진 시간만큼 돌았으면, job의 priority를 1단계 낮춤
+> #### Rule 4: 특정 priority level에서 정해진 시간만큼 돌았으면, job의 priority를 1단계 낮춘다.
 
 → 각 priority level에서 최대 사용 시간 제한!
 
@@ -505,46 +505,6 @@ starvation 문제를 해결하기 위해 룰을 추가하였다.
 - 낮은 우선순위 큐 → 긴 slice-time
 
 
-
-<br>
-
-## RT (Real-Time)
-
-### CPS
-
-: Cyber-physical systems (물리적 요소 + 사이버/컴퓨팅적 요소)
-
-<br>
-
-### Requirements
-
-- **Safety**
-  - 시스템이 동작하는 타이밍이 정확히 맞아떨어져야함
-- Performance
-- Interoperability
-
-<br>
-
-### Real-Time Systems
-
-- 논리적 정확성 + 시간적 정확성
-- before deadlines
-- Real-time != fast (**predictable**이 더 중요!)
-
-<br>
-
-### Performance measure
-
-- deadline에 얼마나 잘 맞춰줄 수 있는지
-
-<br>
-
-### Types
-
-- **Hard real-time systems**: 하나라도 데드라인 못맞추면 결과가 치명적인 시스템
-  - Validation(검증) 필수
-  - 어떤 상황에도 데드라인 100% 지켜야함 
-- **Soft real-time systems**: deadline miss가 크게 치명적이지 않은 시스템
 
 <br>
 
@@ -568,13 +528,13 @@ starvation 문제를 해결하기 위해 룰을 추가하였다.
 
 ## 방법6. RM (Rate Monotonic)
 
-: 주기(period)가 짧을수록 높은 우선순위 가짐
+: 주기(period)가 짧을수록 높은 우선순위 가진다.
 
 <br>
 
 ### 문제점
 
-- deadline을 못맞추는 문제가 발생
+- deadline을 못맞추는 문제가 발생할 수 있다.
 
   <img width="818" alt="image" src="https://user-images.githubusercontent.com/70627979/163714403-86e5fed2-68e6-4215-976e-cb3da29b5c11.png" style="zoom:50%;" >
 
@@ -595,13 +555,13 @@ Response Time 계산
 
 #### RTA (Response Time Analysis)
 
-: 만약 모든 task의 response time <= period(==deadline)인 경우, RM 스케줄러로 스케줄링 가능
+: 만약 모든 task의 response time <= period(==deadline)인 경우, RM 스케줄러로 스케줄링이 가능하다.
 
 <br>
 
 #### Utilization bound
 
-: 만약 모든 task의 ΣUi <= n*(2^(1/n) - 1)인 경우, RM 스케줄러로 스케줄링 가능
+: 만약 모든 task의 ΣUi <= n*(2^(1/n) - 1)인 경우, RM 스케줄러로 스케줄링이 가능하다.
 
 - Ui = ei / pi
 
@@ -609,7 +569,7 @@ Response Time 계산
 
 ## 방법7. EDF (Earliest Deadline First)
 
-: deadline이 가장 임박할수록 높은 우선순위 가짐
+: deadline이 가장 임박할수록 높은 우선순위 가진다.
 
 <img width="816" alt="image" src="https://user-images.githubusercontent.com/70627979/163714754-c592ebaf-a15b-48c3-a02e-4ed2dec0aaaa.png" style="zoom: 75%;" >
 
@@ -621,15 +581,15 @@ Response Time 계산
 
 - Demand Bound Function: dbt(t) → t 동안 필요한 프로세스 양이 얼마나 되는지
 
-- 만약 모든 interval **t** 에 대해 dbf(t) <= t 를 만족하는 경우, EDF 스케줄러로 스케줄링 가능
+- 만약 모든 interval **t** 에 대해 dbf(t) <= t 를 만족하는 경우, EDF 스케줄러로 스케줄링이 가능하다.
 
 <br>
 
 #### Utilization bound
 
-- 만약 모든 task의 ΣUi <= 1 인 경우, EDF 스케줄러로 스케줄링 가능
+- 만약 모든 task의 ΣUi <= 1 인 경우, EDF 스케줄러로 스케줄링이 가능하다.
 
-  → Utilization Bound가 1이라는 것은 특정 시간동안 CPU를 계속 사용가능하다는 것
+  → Utilization Bound가 1이라는 것은 특정 시간동안 CPU를 계속 사용가능하다는 것이다.
 
 <br>
 
@@ -643,7 +603,7 @@ Response Time 계산
 
 #### EDF
 
-- CPU를 한순간도 쉬지 않게 거의 꽉 채워서 사용 가능
+- CPU를 한순간도 쉬지 않게 거의 꽉 채워서 사용 가능하다.
 - 컴퓨팅 능력에 비해 task들이 더 많이 들어온 경우, 잘 동작하지 않는다.
 
 <br>
