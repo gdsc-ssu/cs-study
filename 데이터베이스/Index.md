@@ -27,7 +27,7 @@
 
 - Dense Index(밀집 색인)
 
-  <img width="660" alt="스크린샷 2022-12-25 03 21 00" src="https://user-images.githubusercontent.com/67703882/209447391-f53028ae-82b0-4f4f-90af-e967c219b780.png" style="zoom: 70%;" >
+  <img width="660" alt="스크린샷 2022-12-25 03 21 00" src="https://user-images.githubusercontent.com/67703882/209447391-f53028ae-82b0-4f4f-90af-e967c219b780.png" style="zoom: 50%;" >
 
   - **모든 탐색키 값**에 대하여 색인 레코드 혹은 엔트리가 색인에 존재하는 구조이다. 
   - 탐색키들은 파일 자체의 순서와 동일하게 유지한다. 
