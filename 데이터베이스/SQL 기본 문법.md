@@ -1,10 +1,10 @@
 # SQL 문법 정리
 
-## ✅ SQL이란?
+## SQL이란?
 - Structured Query Language(구조적 질의 언어)
 - 관계형 데이터베이스 시스템(RDBMS)에서 자료의 관리 및 처리 목적으로 설계된 언어
 
-## ✅ 데이터베이스 언어 종류
+## 데이터베이스 언어 종류
 - [데이터베이스 언어 및 개념 자세히 살펴보기](https://github.com/gdsc-ssu/cs-study/blob/main/데이터베이스/DB%20개념%20정리.md)
 - ▶️ **DDL(Data Definition Language) : 데이터 정의어**
    - 각 릴레이션의 정의를 위해 사용되는 언어 (`CREATE`, `ALTER`, `DROP`, `RENAME`, `TRUNCATE` ...)
@@ -18,9 +18,9 @@
 - ▶️ **TCL(Transaction Control Language) : 트랜잭션 제어어**
    - 트랜잭션을 제어하는 언어 (`COMMIT`, `ROLLBACK`, `SAVEPOINT` ...)
  
-## ✅ SQL 문법 특성
+## SQL 문법 특성
 1. **대소문자의 구별 X**
-	- 단, 서버 환경 또는 DBMS 종류에 따라 데이터베이스 및 필드명의 대소문자를 구분하는 경우도 존재함
+	- 단, 서버 환경 또는 DBMS 종류에 따라 데이터베이스 및 필드명의 대소문자를 구분하는 경우도 존재한다.
 1. **SQL 명령문**은 반드시 세미콜론(`;`)으로 끝낼 것
 1. **고유 값**의 경우 따옴표(`' '`)로 감쌀 것
 1. SQL에서의 객체 표현은 **백틱**으로 감쌀 것
@@ -29,7 +29,7 @@
 1. 여러 줄 주석은 `/* */`을 붙여 사용
    - ex) `/* SELECT * FROM EMP WHERE EMPID=(SELECT * FROM WHERE NAME="GDSC"); */`
 
-## ✅ SQL 문법
+## SQL 문법
 ### ▶️ CREATE
 - **`CREATE DATABASE` : 새로운 데이터베이스 생성**
  ```sql
@@ -96,9 +96,9 @@
    DROP TABLE 테이블이름;
   ```
 - **`TRUNCATE TABLE` : 테이블 자체 X, 테이블의 데이터만 삭제**
-   - 테이블 자체는 그대로 남게 됨
-   - 해당 테이블의 저장된 데이터만 삭제
-   - `SELECT`로 테이블의 데이터를 불러올 경우 아무런 데이터도 저장되어 있지 않기에 조회되는 데이터가 없음
+   - 테이블 자체는 그대로 남게 된다.
+   - 해당 테이블의 저장된 데이터만 삭제한다.
+   - `SELECT`로 테이블의 데이터를 불러올 경우 아무런 데이터도 저장되어 있지 않기에 조회되는 데이터가 없다.
   ```sql
    TRUNCATE TABLE 테이블이름;
   ```
@@ -111,7 +111,7 @@
    VALUES (데이터값1, 데이터값2, 데이터값3, ...);
   INSERT INTO 테이블이름 VALUES (데이터값1, 데이터값2, 데이터값3, ...);
  ```
-   - 두번째 예시와 같이 필드 이름 생략 가능 → 데이터베이스 스키마와 같은 순서로 필드의 값이 자동 대입됨
+   - 두번째 예시와 같이 필드 이름 생략 가능 → 데이터베이스 스키마와 같은 순서로 필드의 값이 자동으로 대입된다.
       - 생략 가능한 필드 목록
       1. `NULL`을 저장할 수 있도록 설정된 필드
       1. `DEFAULT` 제약 조건이 설정된 필드
@@ -153,7 +153,7 @@
  ```
  
   - 특정 조건의 레코드 선택
-     - Name의 필드 값이 'GDSC SSU'인 것 만 선택
+     - Name의 필드 값이 'GDSC SSU'인 것만 선택
  ```sql
  SELECT *
   FROM GDSC
@@ -161,7 +161,7 @@
  ```
   
   - 특정 필드만 선택
-    - 해당 테이블의 특정 필드만 불러올 수 있음
+    - 해당 테이블의 특정 필드만 불러올 수 있다.
     - 콜론(`,`)으로 여러개의 필드 이름을 한 번에 명시 가능
  ```sql
  SELECT Name, StudentNum FROM GDSC;
@@ -187,6 +187,6 @@
  2. SELECT 필드이름 FROM 테이블이름 AS 별칭;
  ```
   
-## 📌 참고 자료
+## 참고 자료
 - [문법 특성 참고 자료](https://edu.goorm.io/learn/lecture/15413/%ED%95%9C-%EB%88%88%EC%97%90-%EB%81%9D%EB%82%B4%EB%8A%94-sql/lesson/767683/sql%EC%9D%B4%EB%9E%80)
 - [문법 참고 자료](http://www.tcpschool.com/mysql/mysql_basic_syntax)
