@@ -1,12 +1,12 @@
 # 🎄 이진트리 (Binary Tree)
 
-> **트리구조(Tree)** 의 여러 유형 중 가장 기본이 되는 유형입니다.
+> **트리구조(Tree)** 의 여러 유형 중 가장 기본이 되는 유형이다.
 
 _해당 문서는 [트리구조(Tree)](https://github.com/gdsc-ssu/cs-study/blob/data-structure/tree/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0/Tree.md)와 이어집니다._
 
 ## 🌴 이진트리(Binary Tree)란 무엇일까?
 
-- 각 노드의 자식노드가 **2개 이하**인 트리구조.
+- 각 노드의 자식노드가 **2개 이하**인 트리구조이다.
   ![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FblbjFV%2Fbtq1K3P9Y8v%2FH393OwoRI9lX8N3wrz9OO1%2Fimg.png)
 - 자식 노드 중 **왼쪽 자식**을 `left node`, **오른쪽 자식**을 `right node`라고 한다.
   - `left node`에 의한 서브트리와 `right node`에 의한 서브트리는 확실하게 구분되어야 한다.
@@ -21,7 +21,7 @@ _해당 문서는 [트리구조(Tree)](https://github.com/gdsc-ssu/cs-study/blob
 
 ## 🌴 이진트리(Binary Tree)의 종류
 
-> 이진트리(Binary Tree)의 4가지 유형을 소개합니다.
+> 이진트리(Binary Tree)의 4가지 유형은, 아래와 같다.
 
 ### 1️⃣ 정 이진트리 (Full Binary Tree or Strict Binary Tree)
 
@@ -51,7 +51,7 @@ _해당 문서는 [트리구조(Tree)](https://github.com/gdsc-ssu/cs-study/blob
 
 ## 🌴 이진트리(Binary Tree) 구현
 
-> 이진트리의 각 노드 인스턴스는 자신의 부모 노드에 대한 레퍼런스와 두 자식노드에 대한 레퍼런스를 가지게 됩니다.
+> 이진트리의 각 노드 인스턴스는 자신의 부모 노드에 대한 레퍼런스와 두 자식노드에 대한 레퍼런스를 가지게 된다.
 
 ```python
     # 이진트리의 노드
@@ -100,14 +100,9 @@ _해당 문서는 [트리구조(Tree)](https://github.com/gdsc-ssu/cs-study/blob
 
 ## 🔍참고자료
 
-### 내용 및 이미지 참고
-
 - [[자료구조] 이진 트리 (Binary tree) 알아보기](https://yoongrammer.tistory.com/69)
 - [[자료구조] 이진 트리 (Binary Tree)](https://skytitan.tistory.com/97)
 - [5-2. [자료구조] 이진트리(binary tree)](https://kingpodo.tistory.com/27)
 - [[자료구조] 트리(Tree)의 개념 | 이진 트리, 전 이진 트리, 완전 이진트리, 포화 이진 트리, 이진 탐색트리](https://code-lab1.tistory.com/8)
-
-### 소스코드 참고
-
 - [이진트리 및 완전이진트리 구현과 순회](https://seongonion.tistory.com/41)
 - [[자료구조] 이진 트리(Binary Tree)](https://velog.io/@cha-suyeon/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%EC%9D%B4%EC%A7%84-%ED%8A%B8%EB%A6%ACBinary-Tree)

@@ -118,8 +118,6 @@
 
 ## 🔍 참고자료
 
-### 내용 및 이미지 참고
-
 - [[컴퓨터구조] 인터럽트(Interrupt)란?](https://whatisthenext.tistory.com/147)
 - [[OS기초] 인터럽트 제대로 이해하기](https://velog.io/@adam2/%EC%9D%B8%ED%84%B0%EB%9F%BD%ED%8A%B8)
 - [CS-Free-study/CS-Study - Interrupt.md](https://github.com/CS-Free-study/CS-Study/blob/main/contents/operating-system/Interrupt.md)

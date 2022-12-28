@@ -189,12 +189,7 @@ def delete_Node(root, key):
 
 ## 🔍 참고자료
 
-### 내용 및 이미지 참고
-
 - [이진탐색트리(Binary Search Tree)](https://ratsgo.github.io/data%20structure&algorithm/2017/10/22/bst/)
 - [[자료구조] 이진탐색트리(Binary Search Tree)의 개념, 이해 | C언어 이진탐색트리 구현](https://code-lab1.tistory.com/10#recentComments)
-
-### 소스코드 참고
-
 - [이진탐색트리(Binary Search Tree)](https://ratsgo.github.io/data%20structure&algorithm/2017/10/22/bst/)
 - [Python Binary Search Tree: Delete a node in a given Binary search tree (BST)](https://www.w3resource.com/python-exercises/data-structures-and-algorithms/python-binary-search-tree-exercise-4.php)
