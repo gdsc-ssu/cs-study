@@ -18,7 +18,7 @@
     <li>
       프로세스 : 메모리 상에서 실행중인 프로그램
       <br>
-      프로세스는 최소 하나의 스레드를 보유하고 있으며, 각각 별도의 주소 공간을 독립적으로 할당받음. (`code`, `heap`, `stack`)
+      프로세스는 최소 하나의 스레드를 보유하고 있으며, 각각 별도의 주소 공간을 독립적으로 할당받음. (<code>code</code>, <code>heap</code>, <code>stack</code>)
     </li>
     <li>
     	스레드 : 프로세스 내에서 실행되는 흐름 단위
@@ -44,4 +44,24 @@
       </ul>
     </li>
   </ul>
+</details>
+
+<details>
+<summary><strong>💡 데드락의 발생 조건</strong></summary>
+  여러개의 프로세스들이 여러가지 이유로 서로의 작업이 끝나기만을 기다리며 생기는 교착상태.
+  <ul>
+    <li>
+      Mutual Exclusion (상호배제) : 서로 다른 프로세스가 critical section에 동시에 진입할 수 없는 것.
+    </li>
+    <li>
+    	Hold & wait : 자원을 최소한 하나를 점유하고, 다른 쓰레드가 사용중인 자원을 사용하기 위해 기다림.
+    </li>
+    <li>
+    	No preemption (비선점) : 비선점형 스케쥴러를 사용할 때. (critical section에 강제로 진입 불가능)
+    </li>
+    <li>
+    	circular wait (순환대기) : 대기하고 있는 프로세스들이 순환 형태로 대기하고 있을 때
+    </li>
+  </ul>
+  ⇒ 4가지를 전부 만족해야 한다.
 </details>
