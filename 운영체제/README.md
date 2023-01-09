@@ -17,13 +17,15 @@
   <ul>
     <li>
       프로세스 : 메모리 상에서 실행중인 프로그램
-      <br>
-      프로세스는 최소 하나의 스레드를 보유하고 있으며, 각각 별도의 주소 공간을 독립적으로 할당받음. (`code`, `heap`, `stack`)
+      <ul>
+        <li>프로세스는 최소 하나의 스레드를 보유하고 있으며, 각각 별도의 주소 공간을 독립적으로 할당받음. (<code>code</code>, <code>heap</code>, <code>stack</code>)</li>
+      </ul>
     </li>
     <li>
     	스레드 : 프로세스 내에서 실행되는 흐름 단위
-      <br>
-      스레드는 code, heap, stack 의 주소공간 중 stack 만 별도로 할당받으며 나머지 영역은 스레드끼리 서로 공유함.
+      <ul>
+        <li>스레드는 code, heap, stack 의 주소공간 중 stack 만 별도로 할당받으며 나머지 영역은 스레드끼리 서로 공유함.</li>
+      </ul>
     </li>
 	</ul>
 </details>
@@ -41,6 +43,46 @@
       비동기 : 어떤 일이 끝나지 않아도 다음 일을 수행하는 것
       <ul>
         <li>system call이 완료되지 않아도 기다리지 않으며, 추후 완료될 때 결과물(반환 값)을 가져옴.</li>
+      </ul>
+    </li>
+  </ul>
+</details>
+
+<details>
+<summary><strong>💡 데드락의 발생 조건</strong></summary>
+  데드락: 여러개의 프로세스들이 여러가지 이유로 서로의 작업이 끝나기만을 기다리며 생기는 교착상태
+  <ul>
+    <li>
+      Mutual Exclusion (상호배제) : 서로 다른 프로세스가 critical section에 동시에 진입할 수 없는 것.
+    </li>
+    <li>
+    	Hold & wait : 자원을 최소한 하나를 점유하고, 다른 쓰레드가 사용중인 자원을 사용하기 위해 기다림.
+    </li>
+    <li>
+    	No preemption (비선점) : 비선점형 스케쥴러를 사용할 때. (critical section에 강제로 진입 불가능)
+    </li>
+    <li>
+    	circular wait (순환대기) : 대기하고 있는 프로세스들이 순환 형태로 대기하고 있을 때
+    </li>
+  </ul>
+  ⇒ 4가지를 전부 만족해야 한다.
+</details>
+
+<details>
+<summary><strong>💡 캐시란 무엇인가?</strong></summary>
+  <ul>
+    <li>
+      캐시란?
+      <ul>
+        <li>CPU와 메인메모리 사이에 위치해 자주 사용되는 데이터 및 값을 미리 복사해두는 임시 장소</li>
+      </ul>
+    </li>
+    <li>
+      캐시의 구조
+      <ul>
+        <li>block : 주기억장치로부터 동시에 인출되는 정보들의 그룹</li>
+        <li>line : 캐시에서 각 블록이 저장되는 장소</li>
+        <li>tag : 라인에 적재된 블록을 구분해주는 정보</li>
       </ul>
     </li>
   </ul>
