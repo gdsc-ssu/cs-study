@@ -63,3 +63,23 @@
     </ul>
   </ul>
 </details>
+
+<details>
+<summary><strong>💡 OSI 7계층과 예시</strong></summary>
+  <ul>
+    <li>1계층 physical (물리)계층 : 물리적인 연결을 통한 데이터 전송</li>
+      	ex) 허브
+    <li>2계층 datalink layer(데이터링크 계층) : mac 주소를 사용한 통신, 오류와 재전송 담당.</li>
+    		ex) 스위치
+    <li>3계층 network layer(네트워크 계층) : 패킷형태의 데이터를 목적지까지 전달</li>
+    		ex) ip, route
+    <li>4계층 transport layer(전송 계층) : end to end의 신뢰성 있는 통신을 보장</li>
+    		ex) tcp, udp
+    <li>5계층 session layer(세션 게층) : 응용프로그램간의 대화를 위한 구조 제공 및 관리</li>
+    		ex) ssh, tls
+    <li>6계층 presentation layer(프리젠테이션 계층) : 데이터 포맷 결정, 포맷을 상호 변환</li>
+    		ex) ASCII, JPEG 등
+    <li>7계층 application layer(응용 계층) : 사용자 인터페이스 역할</li>
+    		ex) http, DNS 등
+  </ul>
+</details>
