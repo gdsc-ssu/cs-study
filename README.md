@@ -44,6 +44,8 @@
 |-|-|
 |**네트워크**|[📚 Network Archive](https://github.com/gdsc-ssu/cs-study/tree/main/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC)|
 |**데이터베이스**|[📚 Database Archive](https://github.com/gdsc-ssu/cs-study/tree/main/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4)|
+|**디자인패턴**|[📚 Design Pattern Archive](https://github.com/gdsc-ssu/cs-study/tree/main/%EB%94%94%EC%9E%90%EC%9D%B8%ED%8C%A8%ED%84%B4)|
+|**소프트웨어공학**|[📚 Software Engineering Archive](https://github.com/gdsc-ssu/cs-study/tree/main/%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%EA%B3%B5%ED%95%99)|
 |**알고리즘**|[📚 Algorithm Archive](https://github.com/gdsc-ssu/cs-study/tree/main/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98)|
 |**운영체제**|[📚 Operating System Archive](https://github.com/gdsc-ssu/cs-study/tree/main/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C)|
 |**자료구조**|[📚 Data Structure Archive](https://github.com/gdsc-ssu/cs-study/tree/main/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0)|
