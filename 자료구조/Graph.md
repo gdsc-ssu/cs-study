@@ -64,11 +64,13 @@
 ## 가중치 그래프 (Weighted Graph)
 
 ![](https://velog.velcdn.com/images/igun0423/post/be924a8e-ff2f-4f14-b142-4e3acc3999f7/image.png)
+
 두 정점을 이동하는 비용이 존재하는 그래프를 말한다.
 
 ## 완전 그래프 (Completed Graph)
 
 ![](https://velog.velcdn.com/images/igun0423/post/52513804-b5c4-4fd4-9e8a-9e7b44af55a7/image.png)
+
 모든 정점이 연결되어있는 그래프를 말한다.
 
 # 그래프(Graph)의 탐색
