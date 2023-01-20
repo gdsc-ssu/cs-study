@@ -40,7 +40,7 @@
 
 이미지 출처:[https://velog.io/@eu_nzi/네트워크-DNS-round-robin의-방식](https://velog.io/@eu_nzi/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-DNS-round-robin%EC%9D%98-%EB%B0%A9%EC%8B%9D)
 
-- Roun Robin이란 DNS 서버 구성방식 중 하나로, Domain에 대한 IP요청 쿼리시, Round Robin 방식으로 IP주소를 반환한다.
+- Round Robin이란 DNS 서버 구성방식 중 하나로, Domain에 대한 IP요청 쿼리시, Round Robin 방식으로 IP주소를 반환한다.
 - DNS 서버에 대해 Round Robin 형식으로 구성할 경우 자동으로 시간에 따라 스케쥴링이 변화하기 때문에 로드 밸런서가 필요가 없다.
 - 단점
     - 서버의 수만큼 공인 IP주소가 필요하다
