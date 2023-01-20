@@ -2,7 +2,7 @@
 
 ![](https://velog.velcdn.com/images/igun0423/post/d812a609-8a35-45f1-9ffe-9d7f2edb67e9/image.png)
 
-그래프(Graph)는 정점(Vertex) 간선(Edge)으로 이루어진 **비선형 자료구조**이다.
+그래프(Graph)는 정점(Vertex) 간선(Edge)으로 이루어진 **비선형 자료구조**이다.    
 때문에 그래프(Graph)와 트리(Tree)는 정점의 관계를 표현하는 자료구조라는 점에서 동류라고 볼 수 있다.
 
 ## 용어
