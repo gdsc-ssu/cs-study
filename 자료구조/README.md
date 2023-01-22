@@ -7,6 +7,7 @@
     <li>알고리즘이란 자료구조에 쌓인 데이터를 활용해 어떠한 문제를 해결하기 위한 여러 동작들의 모임이다.</li>
 	</ul>
 </details>
+
 <details>
 <summary><strong>💡 ArrayList와 LinkedList</strong></summary>
   <ul>
@@ -28,6 +29,7 @@
     </li>
 	</ul>
 </details>
+
 
 <details>
 <summary><strong>💡 큐와 스택의 차이</strong></summary>
@@ -81,7 +83,6 @@
     <li>해시 테이블은 key-value 가 1:1 로 매핑되어 있기 때문에 검색, 삽입, 삭제 과정에서 모두 평균적으로 O(1)의 시간 복잡도를 갖는다.</li>
 	</ul>
 </details>
-
 <details>
 <summary><strong>💡 연결 리스트란?</strong></summary><ul>
     <li>각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어있는 방식으로 데이터를 저장하는 자료구조</li>
@@ -89,6 +90,7 @@
     <li>→ 다음 노드를 가리키는 포인터 : 다음 노드의 주소를 값으로 가짐</li>
 	</ul>
 </details>
+
 <details>
 <summary><strong>💡 BST의 문제점과 해결방안</strong></summary><ul>
     <li>문제점: 이진 탐색 트리(BST)는 Skewed Tree(편향된 트리)가 될 수 있으며, 이로 인해 평균 탐색 연산이 최악의 경우 O(n)의 시간 복잡도를 갖게 된다.</li>
@@ -96,38 +98,11 @@
 	</ul>
 </details>
 
-
 <details>
 <summary><strong>💡 트리 순회의 순서(전위, 중위, 후위)</strong></summary>
-
-  <ul>
+	<ul>
     <li>전위 순회는 [루트 → 왼쪽 자식 → 오른쪽 자식] 순으로 순회</li>
     <li>중위 순회는 [왼쪽 자식 → 루트 → 오른쪽 자식] 순으로 순회</li>
     <li>후위 순회는 [루트 → 왼쪽 자식 → 오른쪽 자식] 순으로 순회</li>
 	</ul>
-```c++
-// 전위 순회
-void preorderTraversal(Node root){
-if( root == null ) return;
-root.printfValue();
-preorderTraversal(root.getLeft());
-preorderTraversal(root.getRight());
-}
- 
-// 중위 순회
-void inorderTraversal(Node root){
-if( root == null ) return;
-inorderTraversal(root.getLeft());
-root.printfValue();
-inorderTraversal(root.getRight());
-}
- 
-// 후위 순회
-void postorderTraversal(Node root){
-if( root == null ) return;
-postorderTraversal(root.getLeft());
-postorderTraversal(root.getRight());
-root.printfValue();
-}  
-```
 </details>
