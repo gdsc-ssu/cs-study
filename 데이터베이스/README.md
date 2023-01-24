@@ -104,7 +104,6 @@
     <li>최소성: 키를 구성하는 속성들 중 꼭 필요한 최소한의 속성들로만 키를 구성하는 성질
   </ul>
 </details>
-
 <details>
 <summary><strong>💡 인덱스란 무엇인지</strong></summary>
 추가적인 쓰기 작업과 저장 공간을 활용해 데이터베이스 테이블의 검색 속도를 향상시키기 위한 자료구조<br>
@@ -114,4 +113,15 @@
     <li>데이터 : 책의 내용</li>
     <li>데이터가 저장된 레코드 주소 : 인덱스 목록에 있는 페이지 번호</li>
   </ul>
+</details>
+
+<details>
+<summary><strong>💡 INNER JOIN vs OUTER JOIN</strong></summary>
+  <ul>
+    <li><strong>INNER JOIN</strong></li>
+    결합된 테이블에 조건의 내용이 공통으로 들어가 있는 값을 결과 집합으로 만들어준다. ON 다음에 들어가는 조건에 맞는 내용들만 보여주게 된다.
+    <li><strong>OUTER JOIN</strong></li>
+    INNER JOIN 문을 포함하고 한쪽에만 내용이 있더라도 지정한 기준 테이블에 있는 모든 데이터를 가져오는 조인방식
+  </ul>
+  ⇒ INNER JOIN은 교집합, OUTER JOIN은 합집합
 </details>
