@@ -100,7 +100,7 @@ OOP의 경우 객체 생성 시마다 메모리 영역을 할당받아야 한다
 `new`키워드를 직접 사용해 클래스 내에서 객체를 생성하는 싱글톤 패턴은 SOLID원칙 중 DIP를 위반하며 OCP 원칙을 위반할 가능성이 높다.    
 [객체지향 개발의 5대 원리 : SOLID 원칙](https://www.nextree.co.kr/p6960/)    
 
-## 📌 자료 출처
+## 📌 참고 자료
 - https://gyoogle.dev/blog/design-pattern/Singleton%20Pattern.html
 - https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/DesignPattern#singleton
 - https://tecoble.techcourse.co.kr/post/2020-11-07-singleton/
