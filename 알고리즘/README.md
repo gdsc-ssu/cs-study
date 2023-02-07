@@ -90,3 +90,12 @@
 <summary><strong>💡 정렬 알고리즘 시간복잡도</strong></summary>
   <img src="https://user-images.githubusercontent.com/70627979/213904153-b23c37c5-9978-47eb-a024-ad06db4ba0d0.png" alt="image" style="zoom:70%;" />
 </details>
+
+<details>
+<summary><strong>💡 자료구조 별 시간 복잡도</strong></summary>
+  알고리즘을 해결할 때 사용되는 자료구조에는 배열, 단일 연결 리스트, 이중 연결 리스트, 스택, 큐, 해시 테이블, 이진 트리 등이 있다.<br>
+  <ul>
+    <li>시간 복잡도</li>
+    <img width="603" alt="image" src="https://user-images.githubusercontent.com/70627979/217188276-213e95e1-c639-4a1e-9243-46d52760d0c6.png">
+    </ul>
+</details>
