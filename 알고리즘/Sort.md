@@ -38,7 +38,7 @@
 ![BubbleSort_worst_case](https://user-images.githubusercontent.com/44965706/216212227-de3dea56-c75c-4aa2-90b7-985d16be1d83.gif)
 
 - 모든 값이 역정렬 되어있는 경우
-- 시간 복잡도는 **O(n^2)**
+- 시간 복잡도는 **$O(n^2)$**
   - 각 자리를 찾기 위해 n번의 순회한다.
   - 순회 동안, 요소 개수 만큼 또 순회를 해야한다.
 
