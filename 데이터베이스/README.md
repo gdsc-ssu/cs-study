@@ -44,56 +44,60 @@
     </ul>
   </ul>
 </details>
-
 <details>
 <summary><strong>💡 데이터베이스의 설계 순서</strong></summary>
   <ol>
-    <li>요구 분석</li>
-    <ul>
-      <li>요구 조건 명세서 작성</li>
-    </ul>
-		<li>개념적 설계</li>
-    <ul>
-      <li>개념 스키마, 트랜잭션 모델링, E-R 모델</li>
-    </ul>
-    <li>논리적 설계</li>
-    <ul>
-      <li>dbms에 맞는 스키마 설계, 트랜잭션 인터페이스 설계</li>
-    </ul>
-    <li>물리적 설계</li>
-    <ul>
-      <li>dbms에 맞는 물리적 구조 구축</li>
-    </ul>
-    <li>구현</li>
-    <ul>
-      <li>dbms로 데이터 생성 및 트랜잭션 작성</li>
-    </ul>
+    <li>
+      요구 분석
+      <ul>
+	      <li>요구 조건 명세서 작성</li>
+  	  </ul>
+    </li>
+		<li>
+      개념적 설계
+      <ul>
+	      <li>개념 스키마, 트랜잭션 모델링, E-R 모델</li>
+  	  </ul>
+    </li>
+    <li>
+      논리적 설계
+      <ul>
+	      <li>dbms에 맞는 스키마 설계, 트랜잭션 인터페이스 설계</li>
+  	  </ul>
+    </li>
+    <li>
+      물리적 설계
+      <ul>
+	      <li>dbms에 맞는 물리적 구조 구축</li>
+  	  </ul>
+    </li>
+    <li>
+      구현
+      <ul>
+	      <li>dbms로 데이터 생성 및 트랜잭션 작성</li>
+  	  </ul>
+    </li>
   </ol>
 </details>
 
 <details>
 <summary><strong>💡 키의 종류</strong></summary>
   <ul>
-    <li>슈퍼키(Super Key)</li>
-    <ul>
-      <li>유일성을 만족하는 키</li>
-    </ul>
-		<li>후보키(Candidate Key)</li>
-    <ul>
-      <li>유일성과 최소성을 만족하는 키</li>
-    </ul>
-    <li>기본키(Primary Key)</li>
-    <ul>
-      <li>후보키에서 선택된 키</li>
-    </ul>
-    <li>대체키(Alternate Key)</li>
-    <ul>
-      <li>후보키 중에 기본키로 선택되지 않은 키</li>
-    </ul>
-    <li>외래키(Foreign Key)</li>
-    <ul>
-      <li>다른 릴레이션의 기본키가 되는 키</li>
-    </ul>
+    <li>
+      슈퍼키(Super Key) : 유일성을 만족하는 키
+    </li>
+		<li>
+      후보키(Candidate Key) : 유일성과 최소성을 만족하는 키
+    </li>
+    <li>
+      기본키(Primary Key) : 후보키에서 선택된 키
+    </li>
+    <li>
+      대체키(Alternate Key) : 후보키 중에 기본키로 선택되지 않은 키
+    </li>
+    <li>
+      외래키(Foreign Key) : 다른 릴레이션의 기본키가 되는 키
+    </li>
   </ul>
 </details>
 
@@ -104,6 +108,7 @@
     <li>최소성: 키를 구성하는 속성들 중 꼭 필요한 최소한의 속성들로만 키를 구성하는 성질
   </ul>
 </details>
+
 <details>
 <summary><strong>💡 인덱스란 무엇인지</strong></summary>
 추가적인 쓰기 작업과 저장 공간을 활용해 데이터베이스 테이블의 검색 속도를 향상시키기 위한 자료구조<br>
@@ -115,6 +120,7 @@
   </ul>
 </details>
 
+
 <details>
 <summary><strong>💡 INNER JOIN vs OUTER JOIN</strong></summary>
   <ul>
@@ -124,4 +130,39 @@
     INNER JOIN 문을 포함하고 한쪽에만 내용이 있더라도 지정한 기준 테이블에 있는 모든 데이터를 가져오는 조인방식
   </ul>
   ⇒ INNER JOIN은 교집합, OUTER JOIN은 합집합
+</details>
+
+<details>
+<summary><strong>💡 정규화란 무엇인가?</strong></summary>
+  RDB(관계형 데이터베이스)에서 중복의 최소화를 위해 데이터를 구조화하는 작업이다.<br>
+  중복된 데이터를 허용하지 않음으로써 데이터의 무결성(Integrity) 유지와 DB 저장 용량을 줄일 수 있다.<br>
+  정규화는 나쁜 릴레이션의 어트리뷰트를 나눠 좋고 작은 릴레이션으로 분해하는 작업을 말한다.<br>
+  정규화 작업을 통해 정규형을 만족하게 되며, 정규형은 특정 조건을 만족하는 릴레이션의 스키마 형태를 의미한다.<br><br>
+  정규형에는 기본 정규형과 고급 정규형이 있다.
+  <ul>
+    <li>기본 정규형 : 제 1 정규형, 제 2 정규형, 제 3 정규형, BCNF(보이스/코드 정규형)</li>
+    <li>고급 정규형 : 제 4 정규형, 제 5 정규형</li>
+  </ul>
+</details>
+
+<details>
+<summary><strong>💡 기본 정규형과 고급 정규형</strong></summary>
+  <ul>
+    <li>
+      기본 정규형
+      <ul>
+      	<li>제 1 정규형 : 릴레이션에 속한 모든 속성의 도메인이 더 이상 분해되지 않는 원자 값으로만 구성된 정규형</li>
+      	<li>제 2 정규형 : 릴레이션이 제 1 정규형에 속하고, 기본키가 아닌 모든 속성이 기본키에 완전 함수 종속된 정규형</li>
+      	<li>제 3 정규형 : 릴레이션이 제 2 정규형에 속하고, 기본키가 아닌 모든 속성이 기본키에 이행적 함수 종속이 되지 않는, 이행적 함수 종속을 제거한 정규형</li>
+      	<li>BCNF(보이스/코드 정규형) : 릴레이션의 함수 종속 관계에서 모든 결정자가 후보키인 정규형 후보키가 아닌 결정자를 제거함으로써 조건 성립</li>
+    	</ul>
+    </li>
+		<li>
+      고급 정규형
+      <ul>
+      	<li>제 4 정규형 : 릴레이션이 BCNF를 만족하며, 함수 종속이 아닌 다치 종속을 제거해야 만족하는 정규형</li>
+      	<li>제 5 정규형 : 릴레이션이 제 5 정규형을 만족하며, 후보키를 통하지 않은 조인 종속을 제거해야 만족하는 정규형</li>
+    	</ul>
+    </li>
+  </ul>
 </details>
