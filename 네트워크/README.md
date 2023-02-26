@@ -138,3 +138,121 @@
     <li>5xx (Server Error) : 서버 오류, 서버가 정상 요청을 처리하지 못함.</li>
   </ul>
 </details>
+<details>
+<summary><strong>💡 쿠키와 세션의 차이</strong></summary>
+  <ul>
+    <li>쿠키는 웹사이트 접속시 접속자의 개인장치에 다운로드 되고 브라우저에 저장되는 데이터이다.</li>
+    <li>세션는 웹사이트 접속시 방문자메모리에 저장하는 것이 아닌 웹 서버가 세션 아이디 파일을 만들어 서비스가 돌아가고 있는 서버에 저장을 하는것을 말한다.</li>
+    <li>차이점
+    	<ol>
+        <li>정보가 저장되는 위치가 다르다 -> 쿠키는 클라이언트(브라우저)에 저장. 서버는 세션에 저장</li>
+        <li>보안 면에서 세션이 우수하다 (서버에서 처리를 해주므로)</li>	
+        <li>속도는 쿠키가 빠르다 (서버를 이용하지 않으므로)</li>
+      </ol>
+    </li>
+  </ul>
+</details>
+
+<details>
+<summary><strong>💡 GET와 POST의 차이점</strong></summary>
+  <ul>
+    <li>GET 은 데이터를 조회하기 위해 사용되는 방식으로 데이터를 헤더에 추가하여 전송하는 방식이다.
+    	<ul>
+        <li>URL에 데이터가 노출되므로 보안적으로 중요한 데이터를 포함해서는 안된다.</li>
+      </ul>
+    </li>
+    <li>POST 는 데이터를 추가 및 수정하기 위해 사용되는 방식으로 데이터를 HTTP 메세지의 body에 추가하여 전송하는 방식이다.
+    	<ul>
+        <li>URL에 데이터가 노출되지 않아 GET 보다는 비교적 안전하다.</li>
+        <li>HTTP 메세지의 body는 길이 제한이 없기 때문에 대용량 데이터를 전송할때 적합하다. </li>
+      </ul>
+    </li>
+    <img width="476" alt="스크린샷 2023-02-26 21 39 41" src="https://user-images.githubusercontent.com/67703882/221411001-3acb3111-edd6-48c8-b6ff-bbe841729515.png">
+  </ul>
+</details>
+<details>
+<summary><strong>💡 URL와 URI의 차이점</strong></summary>
+  <ul>
+      <li>URI(Uniform Resource Identifier)
+    	<ul>
+        <li>특정 리소스를 식별하는 통합 자원 식별자를 의미한다.</li>
+        <li>웹 브라우저 파일을 비롯한 리소스를 식별하는 고유한 문자열 시퀀스이다.</li>
+      </ul>
+    </li>
+    <li>URL(Uniform Resource Locator)
+    	<ul>
+        <li>컴퓨터 네트워크 상에서 통합 자원(리소스)가 어디에 위치하고 있는지 나타내기 위한 규약이다.</li>
+        <li>URI의 서브셋이다.</li>
+        <li>어떻게 위치를 찾고 도달할 수 있는지까지 포함되어야하기 떄문에 프로토콜(http,https,ftp 등) + 이름 의 형태여야한다. </li>
+      </ul>
+    </li>
+  </ul>
+</details>
+<details>
+<summary><strong>💡 DNS란</strong></summary>
+  <ul>
+    <li>컴퓨터의 주소를 찾기 위해, 사람이 이해할 수 있는 Domain Name과 숫자로 된 IP 주소를 서로 변환하는 역할을 한다.</li>
+    <li>라우팅 시, 많은 Domain이 존재하기 때문에 계층적으로 분리하여 DNS를 관리한다.
+    	<ol>
+        <li>Root DNS 서버
+        	<ul>
+            <li>가장 최상위에 위치한다.</li>
+            <li>ICANN(국제인터넷주소관리기구)에서 관리한다.</li>
+            <li>도메인에 따라 다음 DNS 서버로 라우팅한다.</li>
+          </ul>
+        </li>
+        <li>TLD(Top Level Doamin) 서버
+        	<ul>
+            <li>.org .com과 같은 일반 최상위 도메인</li>
+            <li>.kr등 국가 코드 최상위 도메인</li>
+            <li>최상위 도메인의 IP를 저장한다.</li>
+            <li>이후, 도메인과 연관된 다음 DNS 서버로 라우팅한다.</li>
+          </ul>
+        </li>
+        <li>Authoritative DNS Server
+        	<ul>
+            <li>도메인과 IP 주소를 변환한다.</li>
+            <li>최종 도착지 도메인의 IP 주소를 얻는다.</li>
+          </ul>
+        </li>
+        <li>Recursive DNS Server (DNS resolver)
+        	<ul>
+            <li>최종 도착지 도메인의 정보를 캐싱한다.</li>
+            <li>DNS 서버가 안내하는 정보에 따라 라우팅한다.</li>
+          </ul>
+        </li>        
+      </ol>
+    </li>	
+  </ul>
+</details>
+
+<details>
+<summary><strong>💡 PUT, POST, PATCH 비교</strong></summary>
+  <ul>
+    <li><strong>POST</strong>: 자원 생성
+    	<ul>
+        <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/POST">https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/POST</a></li>
+        <li><a href="https://developer.mozilla.org/ko/docs/Glossary/Idempotent">멱등성</a> X</li>
+      </ul>
+    </li>
+    <li><strong>PUT</strong>: 자원 생성 및 전체 수정(대체)
+    	<ul>
+        <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/PUT">https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/PUT</a></li>
+        <li>자원 생성으로 동작할 경우 201로 응답해야한다.</li>
+        <li>멱등성 O</li>
+      </ul>
+    </li>
+    <li><strong>PATCH</strong>: 자원 부분 수정
+    	<ul>
+        <li><a href="https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/PATCH">https://developer.mozilla.org/ko/docs/Web/HTTP/Methods/PATCH</a></li>
+        <li>자원 생성으로 동작할 경우 201로 응답해야한다.</li>
+        <li>멱등성 X</li>
+      </ul>
+    </li>
+  </ul>
+</details>
+
+<details>
+<summary><strong>💡 DHCP Server 역할</strong></summary>
+  DHCP(Dynamic Host Configuration Protocol, 동적 호스트 설정 프로토콜) 서버는 IP를 보유하고, 클라이언트들에게 동적으로 IP 주소를 할당한다.
+</details>
