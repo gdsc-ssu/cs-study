@@ -114,3 +114,36 @@
     </li>
   </ol>
 </details>
+
+<details>
+<summary><strong>💡 메모리의 종류</strong></summary>
+  <ul>
+    <li>
+      RAM (Random Access Memory)
+      <ul>
+        <li>휘발성 메모리로, 전원을 끄면 데이터가 소멸된다.</li>
+        <li>SRAM(Static RAM) : 전원이 공급되는 동안에는 데이터를 보관할 수 있어 재생할 필요가 없다. </li>
+        <li>DRAM(Dynamic RAM) : 일정 시간이 되면 데이터가 사라지므로 다시 재생시켜야한다.</li>
+        <li>일반적으로 메인 메모리에 DRAM을 사용하고 캐시 같은 고속 메모리에 SRAM을 사용한다.</li>
+      </ul>
+    </li>
+    <li>
+    	ROM (Read Only Memory)
+      <ul>
+        <li>비휘발성 메모리로, 전원을 꺼도 데이터가 소멸되지 않는다.</li>
+        <li>데이터를 저장하면 반영구적으로 사용할 수 있다. 기본적으로는 데이터 수정이 불가하지만 특정 기술을 통해 데이터 삭제 후 다시 기록이 가능하다. </li>
+        <li>EPROM(Erasable PROM) : 저장 후 저장된 데이터를 삭제 가능</li>
+        <li>EEPROM(Electrically Erasable PROM) : 고전압으로 데이터 삭제 후 다시 기록 가능</li>
+        <li>UVEPROM(Ultra-Violet EPROM) : 자외선을 통하여 데이터 삭제</li>
+      </ul>
+    </li>
+    <li>
+    	플래시 메모리
+      <ul>
+        <li>RAM 처럼 데이터 수정이 쉬우면서 ROM 처럼 비휘발성 메모리이다.</li>
+        <li>자유롭게 재기록이 가능하나 SDRAM, DRAM에 비하면 속도는 매우 느리다.</li>
+        <li>USB, SSD 등의 다양한 저장장치로 사용된다.</li>
+      </ul>
+    </li>
+  </ul>
+</details>

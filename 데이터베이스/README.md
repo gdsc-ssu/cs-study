@@ -119,8 +119,6 @@
     <li>데이터가 저장된 레코드 주소 : 인덱스 목록에 있는 페이지 번호</li>
   </ul>
 </details>
-
-
 <details>
 <summary><strong>💡 INNER JOIN vs OUTER JOIN</strong></summary>
   <ul>
@@ -164,5 +162,45 @@
       	<li>제 5 정규형 : 릴레이션이 제 5 정규형을 만족하며, 후보키를 통하지 않은 조인 종속을 제거해야 만족하는 정규형</li>
     	</ul>
     </li>
+  </ul>
+</details>
+
+<details>
+<summary><strong>💡 SQL vs NoSQL</strong></summary>
+  <ul>
+    <li><strong>SQL</strong>
+    	<ul>
+        <li>관계형 데이터베이스 (Structured Query Language)</li>
+        <li>데이터는 정해진 스키마에 따라 테이블에 저장</li>
+        <li>데이터는 관계를 통해 여러 테이블에 분산</li>
+        <li>장점
+        	<ul>
+            <li>명확하게 정의 된 스키마, 데이터 무결성 보장</li>
+            <li>관계는 각 데이터를 중복없이 한번만 저장</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><strong>NoSQL</strong>
+    	<ul>
+        <li>비관계형 데이터베이스</li>
+        <li>sql과는 다르게 스키마와 관계가 없음</li>
+        <li>어떠한 데이터의 형태도 저장 가능</li>
+        <li>장점
+        	<ul>
+            <li>스키마가 없기때문에, 훨씬 더 유연.  언제든지 저장된 데이터를 조정하고 새로운 "필드"를 추가 할 수 있음.</li>
+            <li>데이터는 애플리케이션이 필요로 하는 형식으로 저장.  → 데이터를 읽어오는 속도가 빨라짐</li>
+            <li><strong>수직 및 수평 확장</strong>이 가능하므로 데이터베이스가 애플리케이션에서 발생시키는 모든 읽기 / 쓰기 요청을 처리 할 수 있음.</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</details>
+<details>
+<summary><strong>💡 인덱스의 장단점</strong></summary>
+  <ul>
+    <li>장점: 데이터 탐색의 성능이 향상된다.</li>
+    <li>단점: 데이터 삽입/삭제 시 인덱스가 변경되기 때문에 성능이 떨어질 수 있다.</li>
   </ul>
 </details>
