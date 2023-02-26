@@ -7,7 +7,6 @@
     <li>알고리즘이란 자료구조에 쌓인 데이터를 활용해 어떠한 문제를 해결하기 위한 여러 동작들의 모임이다.</li>
 	</ul>
 </details>
-
 <details>
 <summary><strong>💡 ArrayList와 LinkedList</strong></summary>
   <ul>
@@ -29,6 +28,25 @@
     </li>
 	</ul>
 </details>
+
+<details>
+<summary><strong>💡 List와 Set의 차이</strong></summary>
+  <ul>
+    <li>
+      List는 중복이 허용되지만, Set은 중복이 허용되지 않는다.
+      <ul>
+	      <li>List의 데이터를 Set에 삽입하면, 중복이 제거된다.</li>
+  	  </ul>
+    </li>
+    <li>
+      Set은 고유성이 보장된다.
+      <ul>
+	      <li>DB의 <code>distict</code> 연산을 하는 효과를 갖는다.</li>
+	    </ul>
+    </li>
+	</ul>
+</details>
+
 <details>
 <summary><strong>💡 큐와 스택의 차이</strong></summary>
   <ul>
@@ -80,12 +98,49 @@
     <li>해시 테이블은 key-value 가 1:1 로 매핑되어 있기 때문에 검색, 삽입, 삭제 과정에서 모두 평균적으로 O(1)의 시간 복잡도를 갖는다.</li>
 	</ul>
 </details>
-
 <details>
 <summary><strong>💡 연결 리스트란?</strong></summary><ul>
     <li>각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어있는 방식으로 데이터를 저장하는 자료구조</li>
     <li>각 노드는 다음 노드를 가리키는 포인터 포함</li>
     <li>→ 다음 노드를 가리키는 포인터 : 다음 노드의 주소를 값으로 가짐</li>
+	</ul>
+</details>
+
+<details>
+<summary><strong>💡 BST와 Binary Tree의 차이점은?</strong></summary>
+  <ul>
+    <li>
+      이진트리(Binary Tree)
+      <ul>
+	      <li>
+          자식노드가 최대 두개인 노드들로 구성되었다.
+          <ul>
+            <li>왼쪽 자식노드</li>
+            <li>오른쪽 자식노드</li>
+          </ul>
+        </li>
+  	    <li>자료 삽입, 삭제 방법에 따라 종류가 나뉜다.</li>
+  	  </ul>
+    </li>
+    <li>
+      이진 탐색 트리(Binary Search Tree)
+      <ul>
+	      <li>
+          모든 왼쪽 자식노드 값이 루트나 부모 노드보다 작고, 모든 오른쪽 자식노드 값이 루트나 부모노드보다 크다.
+        </li>
+  	    <li>
+          이진트리에 비해 탐색 속도가 빠르다. (<code>O(h)</code>, h는 트리의 높이)
+        </li>
+        <li>
+          균형 잡힌 트리가 아닌 경우, 한쪽으로 쏠린 모양이 나타날 수 있다.
+          <ul>
+            <li>이 경우, 이진트리보다 탐색 속도가 느려진다. (<code>O(n)</code>)</li>
+            <li>이를 위해 설계된 자료구조가 AVL Tree 이다.</li>
+            <li>해당 문제 해결을 위해, 삽입과 삭제 시 트리 구조를 재조정하는 알고리즘을 추가할 수 있다.</li>
+          </ul>
+        </li>
+	    </ul>
+    </li>
 	</ul>
 </details>
 
@@ -95,6 +150,28 @@
     <li>문제점: 이진 탐색 트리(BST)는 Skewed Tree(편향된 트리)가 될 수 있으며, 이로 인해 평균 탐색 연산이 최악의 경우 O(n)의 시간 복잡도를 갖게 된다.</li>
     <li>해결방안: AVL Tree, Red-Black Tree와 같은 Balanced Binary Search Tree(균형 탐색 트리) 자료구조를 사용할 수 있다.</li>
 	</ul>
+</details>
+
+<details>
+<summary><strong>💡 Red Black Tree란?</strong></summary>
+  <ul>
+    <li>
+    	레드 블랙 트리는 자기 균형 이진 탐색 트리(Self-Balancing BST)이다.
+    </li>
+    <li>
+    	 이진탐색 트리에서의 조회 시간 복잡도는 <code>O(log n)</code>이 소요되나, 균형이 무너질 경우 <code>O(n)</code>으로 시간 복잡도가 증가할 수 있습니다. 이를 보완하기 위해 레드 블랙 트리에서는 삽입, 삭제 동안 트리의 모양의 균형을 이루도록 각 노드에 red와 black 색상을 가지도록 설계되었다.
+    </li>
+    <li>
+			결과적으로 레드 블랙 트리는 자기 균형을 이루고 있기 때문에 검색, 삽입, 삭제 연산 시 worst case에서도 <code>O(log n)</code>의 시간 복잡도를 보장한다.
+		</li>
+    <img src="https://user-images.githubusercontent.com/70627979/221402026-96e8ef11-a332-4971-9b4b-24e5d550785b.png" alt="image" style="zoom:100%;" />
+  </ul>
+</details>
+
+
+<details>
+<summary><strong>💡 그래프와 트리의 차이점은?</strong></summary>
+  <img width="564" alt="image" src="https://user-images.githubusercontent.com/70627979/218324529-b9bc059f-8dbf-4967-86dd-87f297ad7ba0.png">
 </details>
 
 <details>
@@ -121,9 +198,6 @@
         <li>최대 힙 : 최대값부터 삭제됨</li>
         <li>최소 힙 : 최소값부터 삭제됨</li>
       </ul>
-			<li>최대 힙 삭제 과정</li/>
-			<img src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1893b9c8-97c3-4f7f-9b28-1031239898ef/max_heap_deletion_animation.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230207%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230207T084545Z&X-Amz-Expires=86400&X-Amz-Signature=54efd328bc9bb3b1c910de9ebbaaa4059bccb6e147b065e6d029e9803d71632b&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22max_heap_deletion_animation.gif%22&x-id=GetObject" alt="image"/>
-		</li>
     <ol>
     <li>루트 노드가 삭제</li>
     <li>마지막 노드가 루트 노드의 자리로 이동</li>
@@ -162,4 +236,20 @@
     </li>
     ⇒ 우선순위 큐는 힙으로 구현됨
   </ul>
+</details>
+<details>
+<summary><strong>💡 Binary Heap이란?</strong></summary>
+	Binary Heap은 Tree 형식을 하고 있으며, Tree 중 배열을 기반으로 하는 완전 이진 트리(Complete Binary Tree) 이다. 힙에는 최대 힙(max heap)과 최소 힙(min heap) 두 종류가 있다.
+  <ul>
+    <li>
+    	최대 힙은 각 노드의 값이 해당 자식의 값보다 크거나 같은 완전 이진 트리를 말한다.
+    </li>
+    <li>
+			최소 힙은 최대 힙과 반대되는 개념으로 각 노드의 값이 해당 자식의 값보다 작은 완전 이진 트리를 말한다.
+    </li>
+    <li>
+      배열을 기반으로 하는 Binary Tree의 값을 넣을 때, 1번 index부터 루트 노드가 시작된다. 0번 index를 건너뛰는 이유는 노드의 고유 번호 값과 배열의 index를 일치시켜 혼동을 줄이기 위함이다.
+    </li>
+  </ul>
+  <img src="https://user-images.githubusercontent.com/70627979/221401328-145ba7bd-7d2f-49db-8b35-435077393d4a.png" alt="image" style="zoom:40%;" />
 </details>
