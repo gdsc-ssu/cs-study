@@ -24,7 +24,7 @@
 const arr = [4, 2, 5, 8, 4, 11, 15];
 const dp = Array(arr.length).fill(1);
 
-// 매번 i 위치까지의 LIS 구하기
+// 매번 i 위치까지의 LIS 길이 구하기
 for (let i = 1; i < arr.length; i++) {
   for (let j = 0; j < i; j++) {
     if (arr[j] < arr[i]) {
@@ -43,7 +43,7 @@ console.log(answer);
 
 <br>
 
-### 2. 이분 탐색
+### 방법2. 이분 탐색
 
 이분 탐색을 사용한 방식은 **$O(nlogn)$의 시간복잡도**를 가져 보다 빠르게 LIS 길이를 찾을 수 있다.
 
