@@ -1,8 +1,8 @@
 # 🏃‍♂️ CI/CD
 
-`Continuous Integration(지속적인 통합)`
+- CI: Continuous Integration(지속적인 통합)
 
-`Continuous Delivery(지속적인 제공)` / `Continuous Deployment(지속적인 배포)`
+- CD: Continuous Delivery(지속적인 제공) / Continuous Deployment(지속적인 배포)`
 
 ![image](https://www.redhat.com/cms/managed-files/styles/wysiwyg_full_width/s3/ci-cd-flow-desktop_edited.png?itok=k5bkXL-F)
 
