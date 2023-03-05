@@ -30,7 +30,7 @@
 ### 관련문제 - 백준
 
 - 17298 오큰수
-
+<
 #include<iostream>
 #include<algorithm>
 #include<vector>
@@ -74,7 +74,7 @@ int main() {
  
 	return 0;
 }
-
+>
 해당 문제 코드를 참고해보세요.
 
 - 1725 히스토그램
