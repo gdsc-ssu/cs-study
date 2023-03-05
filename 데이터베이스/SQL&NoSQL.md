@@ -63,8 +63,8 @@
 ![스크린샷 2023-02-20 오전 12 53 33](https://user-images.githubusercontent.com/21211957/219961395-573468f1-4b7e-451e-b0a6-f4307862fe58.png)
 
 ## 참고자료
-https://www.oracle.com/kr/database/nosql/what-is-nosql/
-https://hanamon.kr/데이터베이스-sql-vs-nosql/
-https://gyoogle.dev/blog/computer-science/data-base/SQL%20&%20NOSQL.html
-https://siyoon210.tistory.com/130
-https://dingrr.com/blog/post/개발-sql-vs-nosql-언제-무엇을-사용할까
+- https://www.oracle.com/kr/database/nosql/what-is-nosql/
+- https://hanamon.kr/데이터베이스-sql-vs-nosql/
+- https://gyoogle.dev/blog/computer-science/data-base/SQL%20&%20NOSQL.html
+- https://siyoon210.tistory.com/130
+- https://dingrr.com/blog/post/개발-sql-vs-nosql-언제-무엇을-사용할까
