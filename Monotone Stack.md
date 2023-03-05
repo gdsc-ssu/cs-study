@@ -1,7 +1,6 @@
 # Monotone Stack
 
-복습: No
-작성일시: January 8, 2023 11:16 PM
+
 
 # Monotone Stack
 
