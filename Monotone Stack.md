@@ -30,6 +30,53 @@
 ### 관련문제 - 백준
 
 - 17298 오큰수
+
+#include<iostream>
+#include<algorithm>
+#include<vector>
+#include<stack>
+ 
+using std::cout; using std::cin;
+using std::vector;
+ 
+int n;
+int result[1000001];
+ 
+int main() {
+	std::ios::sync_with_stdio(false);
+	cin.tie(nullptr); cout.tie(nullptr);
+ 
+	std::stack<std::pair<int, int>> st;
+	cin >> n;
+ 
+	int cnt = 0;
+	std::fill_n(result + 1, n, -1);  // result 배열 -1 로 초기화
+ 
+	int size = n;
+ 
+	while (n--) {
+		int a;
+		cin >> a;
+		cnt++;
+		
+        // 오큰수 찾음.
+		while (!st.empty() && st.top().first < a) {
+			result[st.top().second] = a;
+			st.pop();
+		}
+ 
+		st.push({ a,cnt });
+	}
+	// 스택에 남아있는 값은 오큰수가 없는 값. 고로 그대로 -1 출력.
+	for (int i = 1; i <= size; i++) {
+		cout << result[i] << " ";
+	}
+ 
+	return 0;
+}
+
+해당 문제 코드를 참고해보세요.
+
 - 1725 히스토그램
 - 5828 Fuel Economy
 
