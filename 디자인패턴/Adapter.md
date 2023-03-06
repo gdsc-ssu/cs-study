@@ -115,7 +115,7 @@ public class DuckTestDrive {
 
 ## 📌 [예시 2] 안드로이드에서 어댑터 패턴 (참고로만 보세요!)
 
-- 안드로이드에서의 어댑터는 **뷰(Client)**와 **데이터 셋(Adaptee)**를 연결해주는 역할을 한다.
+- 안드로이드에서의 어댑터는 뷰(Client)와 데이터 셋(Adaptee) 연결해주는 역할을 한다.
 - 어댑터는 데이터 아이템에 접근할 수 있도록 하며, 데이터 셋 속 아이템의 뷰를 그리는 역할도 담당한다.
 
 ![Untitled](https://user-images.githubusercontent.com/85864699/213905346-43b7ac47-7a8d-4e95-8647-f2179434fa51.png)
