@@ -2,10 +2,10 @@
 
 ## 로드밸런싱이란 무엇일까?
 
-![Untitled](https://user-images.githubusercontent.com/85864699/208324606-5fce605e-0741-4fb5-b882-5900b65a987c.png#style=zoom:50%;)
+<img src="https://user-images.githubusercontent.com/85864699/208324606-5fce605e-0741-4fb5-b882-5900b65a987c.png" alt="Untitled" style="zoom:50%;" />
 
 - 네트워크 또는 서버에 가해지는 부하(로드)를 분산(밸런싱) 해주는 기술이다.
-- 로드 밸런싱 기술을 제공하는 서비스 또는 장치를 **로드밸런서** 라고 하며 클라이언트와 네트워크 트래픽이 집중되는 서버들 또는 네트워크 허브 사이에 위치한다.
+- 로드 밸런싱 기술을 제공하는 서비스 또는 장치를 **로드밸런서**라고 하며 클라이언트와 네트워크 트래픽이 집중되는 서버들 또는 네트워크 허브 사이에 위치한다.
 - 특정 서버 또는 네트워크 허브에 부하가 집중되지 않도록 하여 트래픽을 다양한 방법으로 분산하여 서버나 네트워크 허브들의 성능을 최적인 상태로 유지한다.
 - Scale up: 서버 자체의 성능을 높인다.
 - Scale out: 여러대의 서버를 두는 것이다.
@@ -14,8 +14,8 @@
 
 1. 클라이언트가 브라우저에 www.naver.com이라고 입력한다.
 2. 클라이언트에 설정된 메인 DNS서버로 www.naver.com의 IP주소 문의한다.
-3. 메인 DNS서버는 로드 밸런서의 IP(Virtual IP)주소를 메인 DNS 서버에게 알려준다.
-4. 별도 DNS 서버는 로드 런서의 IP주소를 메인 DNS 서버에게 알려준다.
+3. 메인 DNS 서버는 로드 밸런서의 IP(Virtual IP)주소를 별도의 DNS 서버에 문의한다.
+4. 별도 DNS 서버는 로드 밸런서의 IP주소를 메인 DNS 서버에게 알려준다.
 5. 메인 DNS 서버는 획득한 VIP(가상 IP주소)를 클라이언트에 전송한다.
 6. 클라이언트에서 로드밸런서의 VIP주소로 HTTP요청한다.
 7. 로드밸런서는 별도의 로드밸런싱 방법(ex.라운드로빈)을 통하여 서버에게 요청을 전송한다.
@@ -26,7 +26,7 @@
 - **Health Check**
     - 서버들에 대한 주기적인 Health Check를 통해 서버들의 장애 여부를 판단하여, 정상 동작중인 서버로만 트래픽을 보낸다.
     - L3 체크 : ICMP를 이용하여 서버의 IP주소가 통신 가능한 상태인지 확인한다.
-        
+      
         ![l3 healthcheck.png](https://user-images.githubusercontent.com/85864699/208324617-5877e5ad-59a8-4471-9c96-d6fa993b0f23.png)
         
         **🍇 ICMP**
@@ -74,7 +74,7 @@
 ## L4로드 밸런싱과 L7로드 밸런싱
 
 - L4로드 밸런싱
-    
+  
     ![Untitled](https://user-images.githubusercontent.com/85864699/208324624-591422f8-e828-4368-a889-abe0b9051562.png)
     
     - 4계층 : 네트워크 계층, 3계층 : 전송계층의 정보를 바탕으로 로드를 분산한다.
@@ -87,7 +87,7 @@
         - 패킷의 내용을 살펴볼 수 없기에 섬세한 라우팅 불가하다.
         - 사용자 IP가 수시로 바뀌는 경우, 연속적인 서비스 제공하기 어렵다.
 - L7 로드밸런싱
-    
+  
     ![Untitled](https://user-images.githubusercontent.com/85864699/208324634-db73008f-a0be-4f05-b0fb-e9684a05f64a.png)
     
     - 애플리케이션 계층에서 로드를 분산하기 때문에 HTTP헤더, 쿠키 등과 같은 사용자 요청을 기준으로 특정서버에 트래픽 분산 가능하다.
@@ -114,7 +114,7 @@
     - DDNS를 사용한다면 IP주소가 변경되더라도 DNS에 IP를 바뀐 IP주소로 갱신해주어 IP가 변경되더라도 문제없이 사용가능하다.
     - DNS는 health check를 할 수 없어 오버로드 상태가 되어도 사용자들은 과부하 서버로 연결을 요청할 것 이다.
 - GSLB
-    
+  
     ![Untitled](https://user-images.githubusercontent.com/85864699/208324640-74075a42-57c9-4a9e-813e-0a4fe970344c.png)
     
     - 로드밸런싱에서 업그레이드 된 형태 같지만 실제로는 DNS 서비스의 발전된 형태이다. (지능적 DNS 서비스라고 불리기도 한다)
@@ -126,8 +126,8 @@
         - 부하 분산: 많은 트래픽을 여러 서버로 분산시킨다.
         - 성능: client 위치나 네트워크 기반으로 최적의 성능을 낼 서버 선택해준다.
     - DNS와의 차이점
-        
-        
+      
+      
         |  | GSLB | DNS |
         | --- | --- | --- |
         | 재해 복구 | 서버의 상태를 모니터링 (Health Check) 실패한 서버의 IP는 응답에서 제외 | 서버의 상태를 알 수 없다. 서비스를 실패하는 유저 발생 |
@@ -142,12 +142,12 @@
     - 미리 정적인 자원들을 캐싱하여 사용자의 위치와 가까운 곳에 복사본을 저장하고, 바로 자원을 쓸 수 있게 제공하는 기술이다.
     - CDN을 가능하게 하는 기술을 GSLB라고 한다.
     - CDN을 사용하지 않는 경우
-        
+      
         ![Untitled](https://user-images.githubusercontent.com/85864699/208324645-903e12fa-23ee-4825-9b22-98fbb37c5802.png)
         
         - 콘텐츠를 담고있는 Origin Server들은 모든 사용자의 요청에 일일이 응답해야하므로 막대한 트래픽 유발, 부하 끊임없이 들어온다.
     - CDN을 사용하는 경우 (Cache Server이용)
-        
+      
         ![cdn.png](https://user-images.githubusercontent.com/85864699/208324654-c0607192-3d66-4351-b014-6b9d6ca5857a.png)
         
         - 서버의 트래픽 부하 및 비용을 줄이고 사용자에게 빠른 서비스 제공 가능하다.
@@ -169,14 +169,14 @@
 
 ## 참고자료
 
-[https://www.stevenjlee.net/2020/06/30/이해하기-네트워크의-부하분산-로드밸런싱-load-balancing-그/](https://www.stevenjlee.net/2020/06/30/%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%B6%80%ED%95%98%EB%B6%84%EC%82%B0-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1-load-balancing-%EA%B7%B8/)
+- [https://www.stevenjlee.net/2020/06/30/이해하기-네트워크의-부하분산-로드밸런싱-load-balancing-그/](https://www.stevenjlee.net/2020/06/30/%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EC%9D%98-%EB%B6%80%ED%95%98%EB%B6%84%EC%82%B0-%EB%A1%9C%EB%93%9C%EB%B0%B8%EB%9F%B0%EC%8B%B1-load-balancing-%EA%B7%B8/)
 
-[https://velog.io/@jhoryong/Network-CDN-DNS](https://velog.io/@jhoryong/Network-CDN-DNS)
+- [https://velog.io/@jhoryong/Network-CDN-DNS](https://velog.io/@jhoryong/Network-CDN-DNS)
 
-[https://velog.io/@chun_gil/CDN-Content-Delivery-Networks-개념-정리](https://velog.io/@chun_gil/CDN-Content-Delivery-Networks-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC)
+- [https://velog.io/@chun_gil/CDN-Content-Delivery-Networks-개념-정리](https://velog.io/@chun_gil/CDN-Content-Delivery-Networks-%EA%B0%9C%EB%85%90-%EC%A0%95%EB%A6%AC)
 
-[https://co-no.tistory.com/22](https://co-no.tistory.com/22)
+- [https://co-no.tistory.com/22](https://co-no.tistory.com/22)
 
-[https://manvscloud.com/?p=447](https://manvscloud.com/?p=447)
+- [https://manvscloud.com/?p=447](https://manvscloud.com/?p=447)
 
-[https://skstp35.tistory.com/294](https://skstp35.tistory.com/294)
+- [https://skstp35.tistory.com/294](https://skstp35.tistory.com/294)
